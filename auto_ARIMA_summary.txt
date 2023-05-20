@@ -1,0 +1,65 @@
+                      Performing stepwise search to minimize aic
+ ARIMA(0,0,0)(0,0,0)[0]             : AIC=1337.597, Time=0.02 sec
+ ARIMA(1,0,0)(0,0,0)[0]             : AIC=1321.231, Time=0.03 sec
+ ARIMA(0,0,1)(0,0,0)[0]             : AIC=inf, Time=0.04 sec
+ ARIMA(2,0,0)(0,0,0)[0]             : AIC=1320.599, Time=0.01 sec
+ ARIMA(3,0,0)(0,0,0)[0]             : AIC=1321.810, Time=0.02 sec
+ ARIMA(2,0,1)(0,0,0)[0]             : AIC=inf, Time=0.09 sec
+ ARIMA(1,0,1)(0,0,0)[0]             : AIC=inf, Time=0.05 sec
+ ARIMA(3,0,1)(0,0,0)[0]             : AIC=inf, Time=0.22 sec
+ ARIMA(2,0,0)(0,0,0)[0] intercept   : AIC=1322.497, Time=0.04 sec
+
+Best model:  ARIMA(2,0,0)(0,0,0)[0]
+Total fit time: 0.531 seconds
+
+                      SARIMAX Results
+==============================================================================
+Dep. Variable:                      y   No. Observations:                   85
+Model:               SARIMAX(2, 0, 0)   Log Likelihood                -657.299
+Date:                Sat, 20 May 2023   AIC                           1320.599
+Time:                        14:58:26   BIC                           1327.927
+Sample:                    04-30-2016   HQIC                          1323.546
+                         - 04-30-2023                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1         -0.5234      0.096     -5.441      0.000      -0.712      -0.335
+ar.L2         -0.1751      0.113     -1.544      0.123      -0.397       0.047
+sigma2      3.013e+05   3.79e+04      7.950      0.000    2.27e+05    3.76e+05
+===================================================================================
+Ljung-Box (L1) (Q):                   0.01   Jarque-Bera (JB):                 4.92
+Prob(Q):                              0.94   Prob(JB):                         0.09
+Heteroskedasticity (H):               0.36   Skew:                            -0.11
+Prob(H) (two-sided):                  0.01   Kurtosis:                         4.16
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
+                               SARIMAX Results
+==============================================================================
+Dep. Variable:                  price   No. Observations:                   85
+Model:                 ARIMA(2, 3, 0)   Log Likelihood                -642.540
+Date:                Sat, 20 May 2023   AIC                           1291.081
+Time:                        15:10:36   BIC                           1298.301
+Sample:                    04-30-2016   HQIC                          1293.980
+                         - 04-30-2023
+Covariance Type:                  opg
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1         -0.0321      0.047     -0.677      0.498      -0.125       0.061
+ar.L2         -0.0924      0.070     -1.312      0.189      -0.231       0.046
+sigma2      3.854e+05   6.05e+04      6.371      0.000    2.67e+05    5.04e+05
+===================================================================================
+Ljung-Box (L1) (Q):                  17.51   Jarque-Bera (JB):                 0.34
+Prob(Q):                              0.00   Prob(JB):                         0.84
+Heteroskedasticity (H):               0.70   Skew:                             0.10
+Prob(H) (two-sided):                  0.37   Kurtosis:                         3.25
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
+Process finished with exit code 0
