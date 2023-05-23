@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7194575d7ef7f511f09525b11a4ca49f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7194575d7ef7f511f09525b11a4ca49f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7194575d7ef7f511f09525b11a4ca49f = L.map(
+                "map_7194575d7ef7f511f09525b11a4ca49f",
+                {
+                    center: [59.88056968333333, 30.99188299166667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd8c18eee617e3c5606455367a35e8be = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7194575d7ef7f511f09525b11a4ca49f);
+        
+    
+            var marker_cluster_8bdec6a1679b4707fca05f6013299332 = L.markerClusterGroup(
+                {}
+            );
+            map_7194575d7ef7f511f09525b11a4ca49f.addLayer(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+            var marker_c5ecb8f333b94b727ac5ef0553c8dca0 = L.marker(
+                [59.884975, 30.992156],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_2a3847e46f972ababd3ffd66dc4b2ebe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f59de3968f1d5dab0de7338ebfb52a = $(`<div id="html_a1f59de3968f1d5dab0de7338ebfb52a" style="width: 100.0%; height: 100.0%;">Unit price: 112498.77</div>`)[0];
+                popup_2a3847e46f972ababd3ffd66dc4b2ebe.setContent(html_a1f59de3968f1d5dab0de7338ebfb52a);
+            
+        
+
+        marker_c5ecb8f333b94b727ac5ef0553c8dca0.bindPopup(popup_2a3847e46f972ababd3ffd66dc4b2ebe)
+        ;
+
+        
+    
+    
+            var marker_32796f40dcea217d43f0928ef90db78e = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_9a4baebe3d4767723038085642d26c44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11cbca367052c7c33dcc295f475720f6 = $(`<div id="html_11cbca367052c7c33dcc295f475720f6" style="width: 100.0%; height: 100.0%;">Unit price: 122298.99</div>`)[0];
+                popup_9a4baebe3d4767723038085642d26c44.setContent(html_11cbca367052c7c33dcc295f475720f6);
+            
+        
+
+        marker_32796f40dcea217d43f0928ef90db78e.bindPopup(popup_9a4baebe3d4767723038085642d26c44)
+        ;
+
+        
+    
+    
+            var marker_498c57291c805f02c1858ed924d5aa6f = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_b329f2c0dce2c20875182063fc57a61f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d37a691de787bfd7257ba51edc40cc60 = $(`<div id="html_d37a691de787bfd7257ba51edc40cc60" style="width: 100.0%; height: 100.0%;">Unit price: 83966.34</div>`)[0];
+                popup_b329f2c0dce2c20875182063fc57a61f.setContent(html_d37a691de787bfd7257ba51edc40cc60);
+            
+        
+
+        marker_498c57291c805f02c1858ed924d5aa6f.bindPopup(popup_b329f2c0dce2c20875182063fc57a61f)
+        ;
+
+        
+    
+    
+            var marker_0733f289c0e49ce29a12d97ec847cdbf = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e453e3bc17fc6cbac5dc19d36c4a8614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eca1f876c3a01c8d61818de60a4bd43 = $(`<div id="html_8eca1f876c3a01c8d61818de60a4bd43" style="width: 100.0%; height: 100.0%;">Unit price: 86625.0</div>`)[0];
+                popup_e453e3bc17fc6cbac5dc19d36c4a8614.setContent(html_8eca1f876c3a01c8d61818de60a4bd43);
+            
+        
+
+        marker_0733f289c0e49ce29a12d97ec847cdbf.bindPopup(popup_e453e3bc17fc6cbac5dc19d36c4a8614)
+        ;
+
+        
+    
+    
+            var marker_eac40d933d1a5e82bd60fdcadfd94cc6 = L.marker(
+                [59.886343, 31.001193],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_8986a1ebf340c6969291a892687440ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8706112bf6426c5669d596959eeaf229 = $(`<div id="html_8706112bf6426c5669d596959eeaf229" style="width: 100.0%; height: 100.0%;">Unit price: 86758.62</div>`)[0];
+                popup_8986a1ebf340c6969291a892687440ff.setContent(html_8706112bf6426c5669d596959eeaf229);
+            
+        
+
+        marker_eac40d933d1a5e82bd60fdcadfd94cc6.bindPopup(popup_8986a1ebf340c6969291a892687440ff)
+        ;
+
+        
+    
+    
+            var marker_b8a5f4ef1a7c76aa4b39104d67f9ace4 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_445cd53d7a75208108d168b5d818a2ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aabe4559b56d582ec3bd6d56990d1ce = $(`<div id="html_2aabe4559b56d582ec3bd6d56990d1ce" style="width: 100.0%; height: 100.0%;">Unit price: 140679.61</div>`)[0];
+                popup_445cd53d7a75208108d168b5d818a2ce.setContent(html_2aabe4559b56d582ec3bd6d56990d1ce);
+            
+        
+
+        marker_b8a5f4ef1a7c76aa4b39104d67f9ace4.bindPopup(popup_445cd53d7a75208108d168b5d818a2ce)
+        ;
+
+        
+    
+    
+            var marker_9c23111e7f85560c3350b319c8cf2a04 = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_ba4795a962349ea9255ce09bf74ab12b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5a5392e58424d17ee46f33065fdc458 = $(`<div id="html_e5a5392e58424d17ee46f33065fdc458" style="width: 100.0%; height: 100.0%;">Unit price: 105217.04</div>`)[0];
+                popup_ba4795a962349ea9255ce09bf74ab12b.setContent(html_e5a5392e58424d17ee46f33065fdc458);
+            
+        
+
+        marker_9c23111e7f85560c3350b319c8cf2a04.bindPopup(popup_ba4795a962349ea9255ce09bf74ab12b)
+        ;
+
+        
+    
+    
+            var marker_0220832d0e971aa3db3162ba67902572 = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_41160b39234980f26a4c4363f2b66390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5f141e4dfdbe83b0df15cc501cc5b6 = $(`<div id="html_3b5f141e4dfdbe83b0df15cc501cc5b6" style="width: 100.0%; height: 100.0%;">Unit price: 113053.51</div>`)[0];
+                popup_41160b39234980f26a4c4363f2b66390.setContent(html_3b5f141e4dfdbe83b0df15cc501cc5b6);
+            
+        
+
+        marker_0220832d0e971aa3db3162ba67902572.bindPopup(popup_41160b39234980f26a4c4363f2b66390)
+        ;
+
+        
+    
+    
+            var marker_8333ffbc2f199d4c9678681ac3cabcbf = L.marker(
+                [59.877019, 30.999854],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_8eb9e0d2f1e66a66f6e44a1d199ba8c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8958495d0b585b6b75ce81a079f8e3c = $(`<div id="html_e8958495d0b585b6b75ce81a079f8e3c" style="width: 100.0%; height: 100.0%;">Unit price: 74540.54</div>`)[0];
+                popup_8eb9e0d2f1e66a66f6e44a1d199ba8c3.setContent(html_e8958495d0b585b6b75ce81a079f8e3c);
+            
+        
+
+        marker_8333ffbc2f199d4c9678681ac3cabcbf.bindPopup(popup_8eb9e0d2f1e66a66f6e44a1d199ba8c3)
+        ;
+
+        
+    
+    
+            var marker_bb02f1c9331265c3f4c6894c0485fd0d = L.marker(
+                [59.888717, 30.991698],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_de2c4d11eb11ff774f2b035c8f6c4b7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08118b54a3e2db588c8bd68fbc17cf84 = $(`<div id="html_08118b54a3e2db588c8bd68fbc17cf84" style="width: 100.0%; height: 100.0%;">Unit price: 69018.04</div>`)[0];
+                popup_de2c4d11eb11ff774f2b035c8f6c4b7b.setContent(html_08118b54a3e2db588c8bd68fbc17cf84);
+            
+        
+
+        marker_bb02f1c9331265c3f4c6894c0485fd0d.bindPopup(popup_de2c4d11eb11ff774f2b035c8f6c4b7b)
+        ;
+
+        
+    
+    
+            var marker_bdb7f7cb3c89e36b9a5c95dd84e77abd = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_89444f6f99cdcd1b076b712f9dc22da8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04ac64598196dd9ff04c613ced983399 = $(`<div id="html_04ac64598196dd9ff04c613ced983399" style="width: 100.0%; height: 100.0%;">Unit price: 113806.45</div>`)[0];
+                popup_89444f6f99cdcd1b076b712f9dc22da8.setContent(html_04ac64598196dd9ff04c613ced983399);
+            
+        
+
+        marker_bdb7f7cb3c89e36b9a5c95dd84e77abd.bindPopup(popup_89444f6f99cdcd1b076b712f9dc22da8)
+        ;
+
+        
+    
+    
+            var marker_852476391a4489e556de91a2b2a42be7 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_07140b8d4d62fccd2bb724bd4af2a3f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63bc73798ce578d5581b556d029fd734 = $(`<div id="html_63bc73798ce578d5581b556d029fd734" style="width: 100.0%; height: 100.0%;">Unit price: 133707.87</div>`)[0];
+                popup_07140b8d4d62fccd2bb724bd4af2a3f8.setContent(html_63bc73798ce578d5581b556d029fd734);
+            
+        
+
+        marker_852476391a4489e556de91a2b2a42be7.bindPopup(popup_07140b8d4d62fccd2bb724bd4af2a3f8)
+        ;
+
+        
+    
+    
+            var marker_64d0f431089f0092bb42ed626fb6604d = L.marker(
+                [59.883647, 30.986622],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_902f512e5406cec26fc85f0311361cd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a32dfa9c49eeed59c976a00ce50c62b = $(`<div id="html_0a32dfa9c49eeed59c976a00ce50c62b" style="width: 100.0%; height: 100.0%;">Unit price: 72437.81</div>`)[0];
+                popup_902f512e5406cec26fc85f0311361cd8.setContent(html_0a32dfa9c49eeed59c976a00ce50c62b);
+            
+        
+
+        marker_64d0f431089f0092bb42ed626fb6604d.bindPopup(popup_902f512e5406cec26fc85f0311361cd8)
+        ;
+
+        
+    
+    
+            var marker_0d523bc3e5c1b9e6808ed355c355bf3b = L.marker(
+                [59.873817, 30.985508],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_6b8c43c2b1096192b0f96c8d4e95cc2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e659236cbace5e670f4f632e87744d9f = $(`<div id="html_e659236cbace5e670f4f632e87744d9f" style="width: 100.0%; height: 100.0%;">Unit price: 88842.42</div>`)[0];
+                popup_6b8c43c2b1096192b0f96c8d4e95cc2d.setContent(html_e659236cbace5e670f4f632e87744d9f);
+            
+        
+
+        marker_0d523bc3e5c1b9e6808ed355c355bf3b.bindPopup(popup_6b8c43c2b1096192b0f96c8d4e95cc2d)
+        ;
+
+        
+    
+    
+            var marker_d7ed814c1b5c6425d2a35777b478ad9b = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_1acd02ae8e19d620e2f11f5d3a266d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa82353606a701fc773c6e447f30ad6b = $(`<div id="html_aa82353606a701fc773c6e447f30ad6b" style="width: 100.0%; height: 100.0%;">Unit price: 110634.15</div>`)[0];
+                popup_1acd02ae8e19d620e2f11f5d3a266d7d.setContent(html_aa82353606a701fc773c6e447f30ad6b);
+            
+        
+
+        marker_d7ed814c1b5c6425d2a35777b478ad9b.bindPopup(popup_1acd02ae8e19d620e2f11f5d3a266d7d)
+        ;
+
+        
+    
+    
+            var marker_a203ddde3e4bdb20a9beeae0bbe7a047 = L.marker(
+                [59.879696, 30.994527],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e3c0077fa54edc534740d2a5770ebb50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b70b0053cd573f2abadaa1c19b400f5 = $(`<div id="html_6b70b0053cd573f2abadaa1c19b400f5" style="width: 100.0%; height: 100.0%;">Unit price: 87111.11</div>`)[0];
+                popup_e3c0077fa54edc534740d2a5770ebb50.setContent(html_6b70b0053cd573f2abadaa1c19b400f5);
+            
+        
+
+        marker_a203ddde3e4bdb20a9beeae0bbe7a047.bindPopup(popup_e3c0077fa54edc534740d2a5770ebb50)
+        ;
+
+        
+    
+    
+            var marker_e7dd71119a84d867d5e48c815469ab78 = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4cb16f3a0929ff1de55b9f19d317ca5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ff995666b5181809d79e7bce73ca06e = $(`<div id="html_4ff995666b5181809d79e7bce73ca06e" style="width: 100.0%; height: 100.0%;">Unit price: 102139.95</div>`)[0];
+                popup_4cb16f3a0929ff1de55b9f19d317ca5d.setContent(html_4ff995666b5181809d79e7bce73ca06e);
+            
+        
+
+        marker_e7dd71119a84d867d5e48c815469ab78.bindPopup(popup_4cb16f3a0929ff1de55b9f19d317ca5d)
+        ;
+
+        
+    
+    
+            var marker_3142b4f18b195b0686d189031ba31730 = L.marker(
+                [59.887584, 31.000043],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_85d0e26ebc2628fbaed30aececa47b2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52072b438630e35356dc06e544397d07 = $(`<div id="html_52072b438630e35356dc06e544397d07" style="width: 100.0%; height: 100.0%;">Unit price: 88042.75</div>`)[0];
+                popup_85d0e26ebc2628fbaed30aececa47b2c.setContent(html_52072b438630e35356dc06e544397d07);
+            
+        
+
+        marker_3142b4f18b195b0686d189031ba31730.bindPopup(popup_85d0e26ebc2628fbaed30aececa47b2c)
+        ;
+
+        
+    
+    
+            var marker_e05e119328b2304c1adca304a1837b6f = L.marker(
+                [59.873677, 30.997375],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4706d1faf36ce0708b1969fa66cd6f6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_838ab346c99e73ac2dcfa51126babffd = $(`<div id="html_838ab346c99e73ac2dcfa51126babffd" style="width: 100.0%; height: 100.0%;">Unit price: 100172.41</div>`)[0];
+                popup_4706d1faf36ce0708b1969fa66cd6f6a.setContent(html_838ab346c99e73ac2dcfa51126babffd);
+            
+        
+
+        marker_e05e119328b2304c1adca304a1837b6f.bindPopup(popup_4706d1faf36ce0708b1969fa66cd6f6a)
+        ;
+
+        
+    
+    
+            var marker_6ffa3f7b35ee95af027a4bcecc9a5e2c = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d6652692289a66baf620561842c750c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b04510186c6b91a17fb921713ec2aaa = $(`<div id="html_8b04510186c6b91a17fb921713ec2aaa" style="width: 100.0%; height: 100.0%;">Unit price: 107429.66</div>`)[0];
+                popup_d6652692289a66baf620561842c750c1.setContent(html_8b04510186c6b91a17fb921713ec2aaa);
+            
+        
+
+        marker_6ffa3f7b35ee95af027a4bcecc9a5e2c.bindPopup(popup_d6652692289a66baf620561842c750c1)
+        ;
+
+        
+    
+    
+            var marker_199489c3b60486a93bc88d990af77fa4 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f5f113944d0d5af9500037621d59b67b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef0c83f02e8ae911b114b8f8621f8ecc = $(`<div id="html_ef0c83f02e8ae911b114b8f8621f8ecc" style="width: 100.0%; height: 100.0%;">Unit price: 95083.33</div>`)[0];
+                popup_f5f113944d0d5af9500037621d59b67b.setContent(html_ef0c83f02e8ae911b114b8f8621f8ecc);
+            
+        
+
+        marker_199489c3b60486a93bc88d990af77fa4.bindPopup(popup_f5f113944d0d5af9500037621d59b67b)
+        ;
+
+        
+    
+    
+            var marker_f5e3716e8afd0ca5e7e23a899ad2f5fe = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_7feef19f26b0cbaa59dbda92f3b37bd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e8a29df0dba26ade830f8f24df91786 = $(`<div id="html_9e8a29df0dba26ade830f8f24df91786" style="width: 100.0%; height: 100.0%;">Unit price: 103738.47</div>`)[0];
+                popup_7feef19f26b0cbaa59dbda92f3b37bd2.setContent(html_9e8a29df0dba26ade830f8f24df91786);
+            
+        
+
+        marker_f5e3716e8afd0ca5e7e23a899ad2f5fe.bindPopup(popup_7feef19f26b0cbaa59dbda92f3b37bd2)
+        ;
+
+        
+    
+    
+            var marker_b8c3999fe781763cc77d708e52afb8bf = L.marker(
+                [59.884975, 30.992156],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_51111fd1d79e80bb5e52e216a1139b96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1f5704c0066516048602058f56da4e8 = $(`<div id="html_b1f5704c0066516048602058f56da4e8" style="width: 100.0%; height: 100.0%;">Unit price: 121536.49</div>`)[0];
+                popup_51111fd1d79e80bb5e52e216a1139b96.setContent(html_b1f5704c0066516048602058f56da4e8);
+            
+        
+
+        marker_b8c3999fe781763cc77d708e52afb8bf.bindPopup(popup_51111fd1d79e80bb5e52e216a1139b96)
+        ;
+
+        
+    
+    
+            var marker_56fd8799482a347811c37b908c1f6c14 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_04fe7238e3e257da0a1b3ba23d660faf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_328226466a6b348a8341811e6aca6beb = $(`<div id="html_328226466a6b348a8341811e6aca6beb" style="width: 100.0%; height: 100.0%;">Unit price: 143195.5</div>`)[0];
+                popup_04fe7238e3e257da0a1b3ba23d660faf.setContent(html_328226466a6b348a8341811e6aca6beb);
+            
+        
+
+        marker_56fd8799482a347811c37b908c1f6c14.bindPopup(popup_04fe7238e3e257da0a1b3ba23d660faf)
+        ;
+
+        
+    
+    
+            var marker_d733b271c9c304ea6c75c16eb9cab04d = L.marker(
+                [59.874363, 30.982858],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f53d2343f0fce476f5207a2f0cdf5498 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c174a70df55632ae8adf070ced9e96 = $(`<div id="html_c8c174a70df55632ae8adf070ced9e96" style="width: 100.0%; height: 100.0%;">Unit price: 84000.0</div>`)[0];
+                popup_f53d2343f0fce476f5207a2f0cdf5498.setContent(html_c8c174a70df55632ae8adf070ced9e96);
+            
+        
+
+        marker_d733b271c9c304ea6c75c16eb9cab04d.bindPopup(popup_f53d2343f0fce476f5207a2f0cdf5498)
+        ;
+
+        
+    
+    
+            var marker_950d345c3bb16ca8e0f74f3ba06137fa = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_96f48b0814be1e0f7cf9bf01f3d16902 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91a995c58533e269a9962301f90b20ca = $(`<div id="html_91a995c58533e269a9962301f90b20ca" style="width: 100.0%; height: 100.0%;">Unit price: 123690.0</div>`)[0];
+                popup_96f48b0814be1e0f7cf9bf01f3d16902.setContent(html_91a995c58533e269a9962301f90b20ca);
+            
+        
+
+        marker_950d345c3bb16ca8e0f74f3ba06137fa.bindPopup(popup_96f48b0814be1e0f7cf9bf01f3d16902)
+        ;
+
+        
+    
+    
+            var marker_6074f9b841a5cf628cb9e51f37da5318 = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_473242229aeadef7165e5c536fb2f0ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51ba8f99b343d2fc3cfb7127da0d2485 = $(`<div id="html_51ba8f99b343d2fc3cfb7127da0d2485" style="width: 100.0%; height: 100.0%;">Unit price: 113578.65</div>`)[0];
+                popup_473242229aeadef7165e5c536fb2f0ab.setContent(html_51ba8f99b343d2fc3cfb7127da0d2485);
+            
+        
+
+        marker_6074f9b841a5cf628cb9e51f37da5318.bindPopup(popup_473242229aeadef7165e5c536fb2f0ab)
+        ;
+
+        
+    
+    
+            var marker_5306b2ee866be1aba50fbd2992641de7 = L.marker(
+                [59.887557, 30.997644],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_0752994ff58b6d0f0034b140f3d7fe7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59e9b62bdc0e1de2f5439fa97b87a6af = $(`<div id="html_59e9b62bdc0e1de2f5439fa97b87a6af" style="width: 100.0%; height: 100.0%;">Unit price: 91021.67</div>`)[0];
+                popup_0752994ff58b6d0f0034b140f3d7fe7e.setContent(html_59e9b62bdc0e1de2f5439fa97b87a6af);
+            
+        
+
+        marker_5306b2ee866be1aba50fbd2992641de7.bindPopup(popup_0752994ff58b6d0f0034b140f3d7fe7e)
+        ;
+
+        
+    
+    
+            var marker_b507e7678d2763506b4850b4ef7da403 = L.marker(
+                [59.877452, 30.997267],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a658ab5c9435e35876c3202a56c3595f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63e0ab2c66b832b0c30f7d1c2646f6f5 = $(`<div id="html_63e0ab2c66b832b0c30f7d1c2646f6f5" style="width: 100.0%; height: 100.0%;">Unit price: 92296.3</div>`)[0];
+                popup_a658ab5c9435e35876c3202a56c3595f.setContent(html_63e0ab2c66b832b0c30f7d1c2646f6f5);
+            
+        
+
+        marker_b507e7678d2763506b4850b4ef7da403.bindPopup(popup_a658ab5c9435e35876c3202a56c3595f)
+        ;
+
+        
+    
+    
+            var marker_fa9c6d8f03cd74fb473ca6b088b2444f = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e172fb17e62d9a71855b6607d192c478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6518c1c3d3bce6e00cc8bc319d17cf5d = $(`<div id="html_6518c1c3d3bce6e00cc8bc319d17cf5d" style="width: 100.0%; height: 100.0%;">Unit price: 105317.71</div>`)[0];
+                popup_e172fb17e62d9a71855b6607d192c478.setContent(html_6518c1c3d3bce6e00cc8bc319d17cf5d);
+            
+        
+
+        marker_fa9c6d8f03cd74fb473ca6b088b2444f.bindPopup(popup_e172fb17e62d9a71855b6607d192c478)
+        ;
+
+        
+    
+    
+            var marker_2af26c3fa9f396fea1321c2e01579c7d = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_57a0fb72867e458d119ce175d6098350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_596d6c491d0e64147ebc6a55aa7d3547 = $(`<div id="html_596d6c491d0e64147ebc6a55aa7d3547" style="width: 100.0%; height: 100.0%;">Unit price: 106006.92</div>`)[0];
+                popup_57a0fb72867e458d119ce175d6098350.setContent(html_596d6c491d0e64147ebc6a55aa7d3547);
+            
+        
+
+        marker_2af26c3fa9f396fea1321c2e01579c7d.bindPopup(popup_57a0fb72867e458d119ce175d6098350)
+        ;
+
+        
+    
+    
+            var marker_2cd4767a6ca8ed57b1913c6002fd6dc0 = L.marker(
+                [59.885598, 30.993539],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_83cf6210a82b9528032a7babdf575966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6968ed1576d32f27524514fc10346c2e = $(`<div id="html_6968ed1576d32f27524514fc10346c2e" style="width: 100.0%; height: 100.0%;">Unit price: 99104.35</div>`)[0];
+                popup_83cf6210a82b9528032a7babdf575966.setContent(html_6968ed1576d32f27524514fc10346c2e);
+            
+        
+
+        marker_2cd4767a6ca8ed57b1913c6002fd6dc0.bindPopup(popup_83cf6210a82b9528032a7babdf575966)
+        ;
+
+        
+    
+    
+            var marker_c860f3fb5f7a3c71b6a0599ad94b27e4 = L.marker(
+                [59.878468, 31.004885],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_ffb6bcd9c19380da0736c654e04c7cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae17c934ceb6a97712f35e9e12e46aa2 = $(`<div id="html_ae17c934ceb6a97712f35e9e12e46aa2" style="width: 100.0%; height: 100.0%;">Unit price: 116103.32</div>`)[0];
+                popup_ffb6bcd9c19380da0736c654e04c7cd2.setContent(html_ae17c934ceb6a97712f35e9e12e46aa2);
+            
+        
+
+        marker_c860f3fb5f7a3c71b6a0599ad94b27e4.bindPopup(popup_ffb6bcd9c19380da0736c654e04c7cd2)
+        ;
+
+        
+    
+    
+            var marker_c4b47f560ea4ec85730548669884e649 = L.marker(
+                [59.872521, 30.995659],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_b7e34c489367ea30e5d9684bb3fe79eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6c55dcf6f7af89b13fae72eddd13773 = $(`<div id="html_d6c55dcf6f7af89b13fae72eddd13773" style="width: 100.0%; height: 100.0%;">Unit price: 87425.43</div>`)[0];
+                popup_b7e34c489367ea30e5d9684bb3fe79eb.setContent(html_d6c55dcf6f7af89b13fae72eddd13773);
+            
+        
+
+        marker_c4b47f560ea4ec85730548669884e649.bindPopup(popup_b7e34c489367ea30e5d9684bb3fe79eb)
+        ;
+
+        
+    
+    
+            var marker_553eeccdf436138a39f283aa3ac6ea67 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a05957f267f45c66e97a622bb7742a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af19ad9db5fbf83f2c546e62223bf4e6 = $(`<div id="html_af19ad9db5fbf83f2c546e62223bf4e6" style="width: 100.0%; height: 100.0%;">Unit price: 136888.89</div>`)[0];
+                popup_a05957f267f45c66e97a622bb7742a8c.setContent(html_af19ad9db5fbf83f2c546e62223bf4e6);
+            
+        
+
+        marker_553eeccdf436138a39f283aa3ac6ea67.bindPopup(popup_a05957f267f45c66e97a622bb7742a8c)
+        ;
+
+        
+    
+    
+            var marker_8556860311af039feacc4fb9425d76bb = L.marker(
+                [59.874097, 30.984179],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_921c165da06b7d951db4b31c658adb1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ee950e5b71c8676460dc932a3064d0a = $(`<div id="html_1ee950e5b71c8676460dc932a3064d0a" style="width: 100.0%; height: 100.0%;">Unit price: 62167.87</div>`)[0];
+                popup_921c165da06b7d951db4b31c658adb1e.setContent(html_1ee950e5b71c8676460dc932a3064d0a);
+            
+        
+
+        marker_8556860311af039feacc4fb9425d76bb.bindPopup(popup_921c165da06b7d951db4b31c658adb1e)
+        ;
+
+        
+    
+    
+            var marker_21ce9cc4e1cee1d162ab708bc3168a93 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4e4e5a1913093cdc2047e256dfb327db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86e593da4d6b6bbc3255f62a327e6e63 = $(`<div id="html_86e593da4d6b6bbc3255f62a327e6e63" style="width: 100.0%; height: 100.0%;">Unit price: 115347.43</div>`)[0];
+                popup_4e4e5a1913093cdc2047e256dfb327db.setContent(html_86e593da4d6b6bbc3255f62a327e6e63);
+            
+        
+
+        marker_21ce9cc4e1cee1d162ab708bc3168a93.bindPopup(popup_4e4e5a1913093cdc2047e256dfb327db)
+        ;
+
+        
+    
+    
+            var marker_7aa7bcc60ba58f0cca0a3de220a3fe14 = L.marker(
+                [59.886343, 31.001193],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_93f3314cc7ce4384cea7783bdc155f08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f00d449aec9e10f57c0de98e2bb0da52 = $(`<div id="html_f00d449aec9e10f57c0de98e2bb0da52" style="width: 100.0%; height: 100.0%;">Unit price: 97027.78</div>`)[0];
+                popup_93f3314cc7ce4384cea7783bdc155f08.setContent(html_f00d449aec9e10f57c0de98e2bb0da52);
+            
+        
+
+        marker_7aa7bcc60ba58f0cca0a3de220a3fe14.bindPopup(popup_93f3314cc7ce4384cea7783bdc155f08)
+        ;
+
+        
+    
+    
+            var marker_f9cc0af6099847e56bc3eb4ef18c857c = L.marker(
+                [59.889164, 30.994285],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_ec904fb35be8a9c6221526bc769c24f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_259aac65f513e6b27849f83f3e31cc89 = $(`<div id="html_259aac65f513e6b27849f83f3e31cc89" style="width: 100.0%; height: 100.0%;">Unit price: 81553.4</div>`)[0];
+                popup_ec904fb35be8a9c6221526bc769c24f1.setContent(html_259aac65f513e6b27849f83f3e31cc89);
+            
+        
+
+        marker_f9cc0af6099847e56bc3eb4ef18c857c.bindPopup(popup_ec904fb35be8a9c6221526bc769c24f1)
+        ;
+
+        
+    
+    
+            var marker_0627a1311478a51fab467fcc359c435e = L.marker(
+                [59.873568, 30.986946],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_6f6e62f428a8b5e70fe8062731f78d63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a658551689702bba325b3ca980b6a57b = $(`<div id="html_a658551689702bba325b3ca980b6a57b" style="width: 100.0%; height: 100.0%;">Unit price: 68466.72</div>`)[0];
+                popup_6f6e62f428a8b5e70fe8062731f78d63.setContent(html_a658551689702bba325b3ca980b6a57b);
+            
+        
+
+        marker_0627a1311478a51fab467fcc359c435e.bindPopup(popup_6f6e62f428a8b5e70fe8062731f78d63)
+        ;
+
+        
+    
+    
+            var marker_5f6cb5f9b2273d0480b9fcf8053be88f = L.marker(
+                [59.883647, 30.986622],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_545b7c985ff7c3c345635316f9b1655d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c6f96cd77af88ed2eb1d7e57429cb78 = $(`<div id="html_5c6f96cd77af88ed2eb1d7e57429cb78" style="width: 100.0%; height: 100.0%;">Unit price: 70461.92</div>`)[0];
+                popup_545b7c985ff7c3c345635316f9b1655d.setContent(html_5c6f96cd77af88ed2eb1d7e57429cb78);
+            
+        
+
+        marker_5f6cb5f9b2273d0480b9fcf8053be88f.bindPopup(popup_545b7c985ff7c3c345635316f9b1655d)
+        ;
+
+        
+    
+    
+            var marker_ea6e927a77b5f6616609ead889652401 = L.marker(
+                [59.866517, 30.98514],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d3444d4980f6a2ed5c0d9cb75c6ef151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa7ad5d9a93a90ceb722832cee244d47 = $(`<div id="html_aa7ad5d9a93a90ceb722832cee244d47" style="width: 100.0%; height: 100.0%;">Unit price: 57551.64</div>`)[0];
+                popup_d3444d4980f6a2ed5c0d9cb75c6ef151.setContent(html_aa7ad5d9a93a90ceb722832cee244d47);
+            
+        
+
+        marker_ea6e927a77b5f6616609ead889652401.bindPopup(popup_d3444d4980f6a2ed5c0d9cb75c6ef151)
+        ;
+
+        
+    
+    
+            var marker_c944aa4b40a7d1a2d715a6e9a748f24c = L.marker(
+                [59.882568, 30.995902],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_cf194979f6c57b735fc1e651e911df02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9957120554ab4f79c7ad2c88b760b7 = $(`<div id="html_da9957120554ab4f79c7ad2c88b760b7" style="width: 100.0%; height: 100.0%;">Unit price: 79284.21</div>`)[0];
+                popup_cf194979f6c57b735fc1e651e911df02.setContent(html_da9957120554ab4f79c7ad2c88b760b7);
+            
+        
+
+        marker_c944aa4b40a7d1a2d715a6e9a748f24c.bindPopup(popup_cf194979f6c57b735fc1e651e911df02)
+        ;
+
+        
+    
+    
+            var marker_1c0361848e08b773b725fcbab15ad7ae = L.marker(
+                [59.886343, 31.001193],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_b04001039242680e2038b829bcfcf587 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74284a64c49b5e540b0a58ee16357284 = $(`<div id="html_74284a64c49b5e540b0a58ee16357284" style="width: 100.0%; height: 100.0%;">Unit price: 86660.0</div>`)[0];
+                popup_b04001039242680e2038b829bcfcf587.setContent(html_74284a64c49b5e540b0a58ee16357284);
+            
+        
+
+        marker_1c0361848e08b773b725fcbab15ad7ae.bindPopup(popup_b04001039242680e2038b829bcfcf587)
+        ;
+
+        
+    
+    
+            var marker_42db633809d389843c3b3d7ac3572227 = L.marker(
+                [59.888049, 30.99892],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_c788fd82b52d0d1e04ed620361002fc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2dbf66bfb2d988c8125aee55646fbdd = $(`<div id="html_a2dbf66bfb2d988c8125aee55646fbdd" style="width: 100.0%; height: 100.0%;">Unit price: 79692.25</div>`)[0];
+                popup_c788fd82b52d0d1e04ed620361002fc3.setContent(html_a2dbf66bfb2d988c8125aee55646fbdd);
+            
+        
+
+        marker_42db633809d389843c3b3d7ac3572227.bindPopup(popup_c788fd82b52d0d1e04ed620361002fc3)
+        ;
+
+        
+    
+    
+            var marker_7add6d0d6d5073317ef10451d0bbc68c = L.marker(
+                [59.888717, 30.991698],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_768ac6f99f3704398d3c081d9339ece8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65beb9c71e30aad2591fac31603de13a = $(`<div id="html_65beb9c71e30aad2591fac31603de13a" style="width: 100.0%; height: 100.0%;">Unit price: 89600.0</div>`)[0];
+                popup_768ac6f99f3704398d3c081d9339ece8.setContent(html_65beb9c71e30aad2591fac31603de13a);
+            
+        
+
+        marker_7add6d0d6d5073317ef10451d0bbc68c.bindPopup(popup_768ac6f99f3704398d3c081d9339ece8)
+        ;
+
+        
+    
+    
+            var marker_e24989a2f753bbbaa18a6b709552120f = L.marker(
+                [59.885598, 30.993539],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_490aeadbc5f1ba56fcd59619ae9b7440 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_816c0dd34ba6f76caadc9695ce397248 = $(`<div id="html_816c0dd34ba6f76caadc9695ce397248" style="width: 100.0%; height: 100.0%;">Unit price: 81331.32</div>`)[0];
+                popup_490aeadbc5f1ba56fcd59619ae9b7440.setContent(html_816c0dd34ba6f76caadc9695ce397248);
+            
+        
+
+        marker_e24989a2f753bbbaa18a6b709552120f.bindPopup(popup_490aeadbc5f1ba56fcd59619ae9b7440)
+        ;
+
+        
+    
+    
+            var marker_8f27f616037e3fc9e40baf3cfa59bc6e = L.marker(
+                [59.883647, 30.986622],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e3d97e560be257cb3b4c868982031808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d751ca901982032d31175ccfeb674ae = $(`<div id="html_8d751ca901982032d31175ccfeb674ae" style="width: 100.0%; height: 100.0%;">Unit price: 93975.9</div>`)[0];
+                popup_e3d97e560be257cb3b4c868982031808.setContent(html_8d751ca901982032d31175ccfeb674ae);
+            
+        
+
+        marker_8f27f616037e3fc9e40baf3cfa59bc6e.bindPopup(popup_e3d97e560be257cb3b4c868982031808)
+        ;
+
+        
+    
+    
+            var marker_2d8a5d9db93a9ab71d5a25b138689eb4 = L.marker(
+                [59.872968, 30.991437],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_8888afd52046d3e9d64c94bfae6406cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4157c95aaed96cc47b1cef594f35b348 = $(`<div id="html_4157c95aaed96cc47b1cef594f35b348" style="width: 100.0%; height: 100.0%;">Unit price: 85882.35</div>`)[0];
+                popup_8888afd52046d3e9d64c94bfae6406cd.setContent(html_4157c95aaed96cc47b1cef594f35b348);
+            
+        
+
+        marker_2d8a5d9db93a9ab71d5a25b138689eb4.bindPopup(popup_8888afd52046d3e9d64c94bfae6406cd)
+        ;
+
+        
+    
+    
+            var marker_62e37ea1a917e0d4fc4b6630850056c9 = L.marker(
+                [59.873677, 30.997375],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_3a3be3b957abcda64630d93de63b2ca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1502a79d5abb36297edbf3b69c03065e = $(`<div id="html_1502a79d5abb36297edbf3b69c03065e" style="width: 100.0%; height: 100.0%;">Unit price: 107800.0</div>`)[0];
+                popup_3a3be3b957abcda64630d93de63b2ca4.setContent(html_1502a79d5abb36297edbf3b69c03065e);
+            
+        
+
+        marker_62e37ea1a917e0d4fc4b6630850056c9.bindPopup(popup_3a3be3b957abcda64630d93de63b2ca4)
+        ;
+
+        
+    
+    
+            var marker_4eca5fa5bf987bf176d52536e3315f21 = L.marker(
+                [59.882934, 30.994617],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d2f6fe05a67a0e6dff1bb182277c269b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1be82d655b048c6826cc9734004db6e6 = $(`<div id="html_1be82d655b048c6826cc9734004db6e6" style="width: 100.0%; height: 100.0%;">Unit price: 95276.71</div>`)[0];
+                popup_d2f6fe05a67a0e6dff1bb182277c269b.setContent(html_1be82d655b048c6826cc9734004db6e6);
+            
+        
+
+        marker_4eca5fa5bf987bf176d52536e3315f21.bindPopup(popup_d2f6fe05a67a0e6dff1bb182277c269b)
+        ;
+
+        
+    
+    
+            var marker_0d5d45ac8d188f7aecf744672d044fa1 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_43aebae42dcae455e1506ef02d4d82dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b6e93fca3704a281238a3137e510946 = $(`<div id="html_0b6e93fca3704a281238a3137e510946" style="width: 100.0%; height: 100.0%;">Unit price: 111784.62</div>`)[0];
+                popup_43aebae42dcae455e1506ef02d4d82dc.setContent(html_0b6e93fca3704a281238a3137e510946);
+            
+        
+
+        marker_0d5d45ac8d188f7aecf744672d044fa1.bindPopup(popup_43aebae42dcae455e1506ef02d4d82dc)
+        ;
+
+        
+    
+    
+            var marker_ae92589c008c10caf1d7d909e3c6132e = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_39d6f44d35ef71dccd736423dcef865b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac4b70e2f2d19ab739743db421b33984 = $(`<div id="html_ac4b70e2f2d19ab739743db421b33984" style="width: 100.0%; height: 100.0%;">Unit price: 112116.38</div>`)[0];
+                popup_39d6f44d35ef71dccd736423dcef865b.setContent(html_ac4b70e2f2d19ab739743db421b33984);
+            
+        
+
+        marker_ae92589c008c10caf1d7d909e3c6132e.bindPopup(popup_39d6f44d35ef71dccd736423dcef865b)
+        ;
+
+        
+    
+    
+            var marker_5f9a73d3834ea78d5f7ee34346e464c1 = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_9be63cbb09ca189b0e78f26d67df1b3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb5c36b150b3d839188f4c860092dcde = $(`<div id="html_fb5c36b150b3d839188f4c860092dcde" style="width: 100.0%; height: 100.0%;">Unit price: 106422.31</div>`)[0];
+                popup_9be63cbb09ca189b0e78f26d67df1b3b.setContent(html_fb5c36b150b3d839188f4c860092dcde);
+            
+        
+
+        marker_5f9a73d3834ea78d5f7ee34346e464c1.bindPopup(popup_9be63cbb09ca189b0e78f26d67df1b3b)
+        ;
+
+        
+    
+    
+            var marker_07f4c7e1481ba4979158e542d742c575 = L.marker(
+                [59.882022, 30.991626],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_5376e9178f61de22304ce5ac0761ed1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dae058ae8c307ba362d2f703d101b89b = $(`<div id="html_dae058ae8c307ba362d2f703d101b89b" style="width: 100.0%; height: 100.0%;">Unit price: 106804.12</div>`)[0];
+                popup_5376e9178f61de22304ce5ac0761ed1d.setContent(html_dae058ae8c307ba362d2f703d101b89b);
+            
+        
+
+        marker_07f4c7e1481ba4979158e542d742c575.bindPopup(popup_5376e9178f61de22304ce5ac0761ed1d)
+        ;
+
+        
+    
+    
+            var marker_ee96fbf56d11b61dd74c2e9484e3bed7 = L.marker(
+                [59.871915, 30.996189],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_7f02208ebbfe2c9bc4b614d688531133 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361a874cce0c26b228b7f743ae499a93 = $(`<div id="html_361a874cce0c26b228b7f743ae499a93" style="width: 100.0%; height: 100.0%;">Unit price: 83168.32</div>`)[0];
+                popup_7f02208ebbfe2c9bc4b614d688531133.setContent(html_361a874cce0c26b228b7f743ae499a93);
+            
+        
+
+        marker_ee96fbf56d11b61dd74c2e9484e3bed7.bindPopup(popup_7f02208ebbfe2c9bc4b614d688531133)
+        ;
+
+        
+    
+    
+            var marker_2d1c906ae5789f1774b29253a9450dc7 = L.marker(
+                [59.873153, 30.9953],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a89fe18e9104ab3d2d37082aa08e59be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b7260cfbfcb508402be30f9de4d6d3e = $(`<div id="html_6b7260cfbfcb508402be30f9de4d6d3e" style="width: 100.0%; height: 100.0%;">Unit price: 74986.84</div>`)[0];
+                popup_a89fe18e9104ab3d2d37082aa08e59be.setContent(html_6b7260cfbfcb508402be30f9de4d6d3e);
+            
+        
+
+        marker_2d1c906ae5789f1774b29253a9450dc7.bindPopup(popup_a89fe18e9104ab3d2d37082aa08e59be)
+        ;
+
+        
+    
+    
+            var marker_fae65af4b615fc7f721e46befbc84837 = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_ae14ecbd7a2a36af3c9cbd86b044d9f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8644aec2a46a120adea13ede11bf475f = $(`<div id="html_8644aec2a46a120adea13ede11bf475f" style="width: 100.0%; height: 100.0%;">Unit price: 116255.89</div>`)[0];
+                popup_ae14ecbd7a2a36af3c9cbd86b044d9f2.setContent(html_8644aec2a46a120adea13ede11bf475f);
+            
+        
+
+        marker_fae65af4b615fc7f721e46befbc84837.bindPopup(popup_ae14ecbd7a2a36af3c9cbd86b044d9f2)
+        ;
+
+        
+    
+    
+            var marker_79be373cd92f966028eb6590f6ba4acf = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_bbc1c0fd794425f7b68dac0d8d87d477 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59a518b8f3fafe2ff98e3bad1118cde6 = $(`<div id="html_59a518b8f3fafe2ff98e3bad1118cde6" style="width: 100.0%; height: 100.0%;">Unit price: 110250.0</div>`)[0];
+                popup_bbc1c0fd794425f7b68dac0d8d87d477.setContent(html_59a518b8f3fafe2ff98e3bad1118cde6);
+            
+        
+
+        marker_79be373cd92f966028eb6590f6ba4acf.bindPopup(popup_bbc1c0fd794425f7b68dac0d8d87d477)
+        ;
+
+        
+    
+    
+            var marker_15dbf89604a2ee7a4e256f43f5ee3028 = L.marker(
+                [59.873776, 30.996513],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4bc44fe12e6c3bad529af54519111c64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b9c285acddd9547db035ff60c8ead6b = $(`<div id="html_5b9c285acddd9547db035ff60c8ead6b" style="width: 100.0%; height: 100.0%;">Unit price: 79655.17</div>`)[0];
+                popup_4bc44fe12e6c3bad529af54519111c64.setContent(html_5b9c285acddd9547db035ff60c8ead6b);
+            
+        
+
+        marker_15dbf89604a2ee7a4e256f43f5ee3028.bindPopup(popup_4bc44fe12e6c3bad529af54519111c64)
+        ;
+
+        
+    
+    
+            var marker_705ba7b3bac9d30d133916e35afc2f08 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_b5a961683bb542fc8980beed4f35b0cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3104e0556932fa918f57aa883b9100e = $(`<div id="html_c3104e0556932fa918f57aa883b9100e" style="width: 100.0%; height: 100.0%;">Unit price: 111349.69</div>`)[0];
+                popup_b5a961683bb542fc8980beed4f35b0cc.setContent(html_c3104e0556932fa918f57aa883b9100e);
+            
+        
+
+        marker_705ba7b3bac9d30d133916e35afc2f08.bindPopup(popup_b5a961683bb542fc8980beed4f35b0cc)
+        ;
+
+        
+    
+    
+            var marker_3852e5cbbd158941d47c1267c8acb1b5 = L.marker(
+                [59.883489, 30.992461],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a89812c8c8fb83bd3401156fbd1b6c06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88688143316383d7a334f32cb71c56be = $(`<div id="html_88688143316383d7a334f32cb71c56be" style="width: 100.0%; height: 100.0%;">Unit price: 96092.54</div>`)[0];
+                popup_a89812c8c8fb83bd3401156fbd1b6c06.setContent(html_88688143316383d7a334f32cb71c56be);
+            
+        
+
+        marker_3852e5cbbd158941d47c1267c8acb1b5.bindPopup(popup_a89812c8c8fb83bd3401156fbd1b6c06)
+        ;
+
+        
+    
+    
+            var marker_96e0b6ba4de3722cad118b2870a2272e = L.marker(
+                [59.884975, 30.992156],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_c63341ecb7ca2d77da8fe106789fbd9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3991599134f7d1d239cbcebd463196b = $(`<div id="html_e3991599134f7d1d239cbcebd463196b" style="width: 100.0%; height: 100.0%;">Unit price: 100280.9</div>`)[0];
+                popup_c63341ecb7ca2d77da8fe106789fbd9e.setContent(html_e3991599134f7d1d239cbcebd463196b);
+            
+        
+
+        marker_96e0b6ba4de3722cad118b2870a2272e.bindPopup(popup_c63341ecb7ca2d77da8fe106789fbd9e)
+        ;
+
+        
+    
+    
+            var marker_a4148864375fdf4d219c08937c6e9355 = L.marker(
+                [59.87355, 30.983074],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_465e214d0c100e5fbd0e3f94eafac714 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ccbdd592de6ce78fe07cc8dff4470e3 = $(`<div id="html_8ccbdd592de6ce78fe07cc8dff4470e3" style="width: 100.0%; height: 100.0%;">Unit price: 93103.45</div>`)[0];
+                popup_465e214d0c100e5fbd0e3f94eafac714.setContent(html_8ccbdd592de6ce78fe07cc8dff4470e3);
+            
+        
+
+        marker_a4148864375fdf4d219c08937c6e9355.bindPopup(popup_465e214d0c100e5fbd0e3f94eafac714)
+        ;
+
+        
+    
+    
+            var marker_e511b54a4079ec90615dd6ad2f28484a = L.marker(
+                [59.873004, 30.989587],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e42e380facfbabcba2e30e480282d349 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3851571d3baad6935ef1912feec7d643 = $(`<div id="html_3851571d3baad6935ef1912feec7d643" style="width: 100.0%; height: 100.0%;">Unit price: 70445.92</div>`)[0];
+                popup_e42e380facfbabcba2e30e480282d349.setContent(html_3851571d3baad6935ef1912feec7d643);
+            
+        
+
+        marker_e511b54a4079ec90615dd6ad2f28484a.bindPopup(popup_e42e380facfbabcba2e30e480282d349)
+        ;
+
+        
+    
+    
+            var marker_65df0c36275e2624b4a8ba00b4213f5a = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_ba94c77859d5811f2ab4577a282adcbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a53cb21fa1eb26eb840645ebe369e3d3 = $(`<div id="html_a53cb21fa1eb26eb840645ebe369e3d3" style="width: 100.0%; height: 100.0%;">Unit price: 99215.43</div>`)[0];
+                popup_ba94c77859d5811f2ab4577a282adcbe.setContent(html_a53cb21fa1eb26eb840645ebe369e3d3);
+            
+        
+
+        marker_65df0c36275e2624b4a8ba00b4213f5a.bindPopup(popup_ba94c77859d5811f2ab4577a282adcbe)
+        ;
+
+        
+    
+    
+            var marker_5cb88676d8261a5b457f5adeaac4a46d = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_1c4936c2b9a68ad119f174a6a5e8e972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce978f9c084b824a576f3e8bab0ff527 = $(`<div id="html_ce978f9c084b824a576f3e8bab0ff527" style="width: 100.0%; height: 100.0%;">Unit price: 105977.84</div>`)[0];
+                popup_1c4936c2b9a68ad119f174a6a5e8e972.setContent(html_ce978f9c084b824a576f3e8bab0ff527);
+            
+        
+
+        marker_5cb88676d8261a5b457f5adeaac4a46d.bindPopup(popup_1c4936c2b9a68ad119f174a6a5e8e972)
+        ;
+
+        
+    
+    
+            var marker_dbeac227a92a114a66737776025f01cb = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_41e42c28de61126a01900f564b4d225e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33ffae8cc209f8379b5f7a163b149d07 = $(`<div id="html_33ffae8cc209f8379b5f7a163b149d07" style="width: 100.0%; height: 100.0%;">Unit price: 117306.12</div>`)[0];
+                popup_41e42c28de61126a01900f564b4d225e.setContent(html_33ffae8cc209f8379b5f7a163b149d07);
+            
+        
+
+        marker_dbeac227a92a114a66737776025f01cb.bindPopup(popup_41e42c28de61126a01900f564b4d225e)
+        ;
+
+        
+    
+    
+            var marker_08794bb92bc47b51d079416c31ece6da = L.marker(
+                [59.880717, 30.988724],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_337e6df64452b7ab36e22af0c0763e90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1706efa8735de9be4f2dc01325b400eb = $(`<div id="html_1706efa8735de9be4f2dc01325b400eb" style="width: 100.0%; height: 100.0%;">Unit price: 80640.0</div>`)[0];
+                popup_337e6df64452b7ab36e22af0c0763e90.setContent(html_1706efa8735de9be4f2dc01325b400eb);
+            
+        
+
+        marker_08794bb92bc47b51d079416c31ece6da.bindPopup(popup_337e6df64452b7ab36e22af0c0763e90)
+        ;
+
+        
+    
+    
+            var marker_3600cdce3fc578ab6e19f1c17155e98d = L.marker(
+                [59.887015, 30.998911],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_edab6cca8273ad1e9ec0c931507ad585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b525238c3d43cc134b415924f62a5051 = $(`<div id="html_b525238c3d43cc134b415924f62a5051" style="width: 100.0%; height: 100.0%;">Unit price: 83612.9</div>`)[0];
+                popup_edab6cca8273ad1e9ec0c931507ad585.setContent(html_b525238c3d43cc134b415924f62a5051);
+            
+        
+
+        marker_3600cdce3fc578ab6e19f1c17155e98d.bindPopup(popup_edab6cca8273ad1e9ec0c931507ad585)
+        ;
+
+        
+    
+    
+            var marker_b7f26273a8250883da159c16691be2b8 = L.marker(
+                [59.8743, 30.997177],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d67b78ace91b07ff28dd6bb63c53a41a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5ba8a1944daffdd64dd6086a300ae5f = $(`<div id="html_a5ba8a1944daffdd64dd6086a300ae5f" style="width: 100.0%; height: 100.0%;">Unit price: 89673.2</div>`)[0];
+                popup_d67b78ace91b07ff28dd6bb63c53a41a.setContent(html_a5ba8a1944daffdd64dd6086a300ae5f);
+            
+        
+
+        marker_b7f26273a8250883da159c16691be2b8.bindPopup(popup_d67b78ace91b07ff28dd6bb63c53a41a)
+        ;
+
+        
+    
+    
+            var marker_29dc88deb50e9fce67fbcb81cc29f9e6 = L.marker(
+                [59.874883, 30.993611],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_acc9067175b4c2b0bb3b705fda140871 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2dc08b38504c37c977119215691ae10 = $(`<div id="html_f2dc08b38504c37c977119215691ae10" style="width: 100.0%; height: 100.0%;">Unit price: 86024.1</div>`)[0];
+                popup_acc9067175b4c2b0bb3b705fda140871.setContent(html_f2dc08b38504c37c977119215691ae10);
+            
+        
+
+        marker_29dc88deb50e9fce67fbcb81cc29f9e6.bindPopup(popup_acc9067175b4c2b0bb3b705fda140871)
+        ;
+
+        
+    
+    
+            var marker_7bea8d70ee1886a4b99600d86f772cce = L.marker(
+                [59.873871, 30.995659],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_0eda4db99fb8a7bdc435d547c0830e95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2922ebefbb455f4a52276d80db08cb1f = $(`<div id="html_2922ebefbb455f4a52276d80db08cb1f" style="width: 100.0%; height: 100.0%;">Unit price: 97264.14</div>`)[0];
+                popup_0eda4db99fb8a7bdc435d547c0830e95.setContent(html_2922ebefbb455f4a52276d80db08cb1f);
+            
+        
+
+        marker_7bea8d70ee1886a4b99600d86f772cce.bindPopup(popup_0eda4db99fb8a7bdc435d547c0830e95)
+        ;
+
+        
+    
+    
+            var marker_271928977de437d5c8f839e76d1a2fef = L.marker(
+                [59.886343, 31.001193],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_0f8511bf7de0cc470fe9d44553fba391 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34e91cf391a9ff22ff951d549fe29fa4 = $(`<div id="html_34e91cf391a9ff22ff951d549fe29fa4" style="width: 100.0%; height: 100.0%;">Unit price: 72845.9</div>`)[0];
+                popup_0f8511bf7de0cc470fe9d44553fba391.setContent(html_34e91cf391a9ff22ff951d549fe29fa4);
+            
+        
+
+        marker_271928977de437d5c8f839e76d1a2fef.bindPopup(popup_0f8511bf7de0cc470fe9d44553fba391)
+        ;
+
+        
+    
+    
+            var marker_be3e7c5260b8971f77d94178873a1ae5 = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_bd17344f1287fd1cd093c200c451577c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d4adec796118855cb9920f56e71a205 = $(`<div id="html_9d4adec796118855cb9920f56e71a205" style="width: 100.0%; height: 100.0%;">Unit price: 98933.33</div>`)[0];
+                popup_bd17344f1287fd1cd093c200c451577c.setContent(html_9d4adec796118855cb9920f56e71a205);
+            
+        
+
+        marker_be3e7c5260b8971f77d94178873a1ae5.bindPopup(popup_bd17344f1287fd1cd093c200c451577c)
+        ;
+
+        
+    
+    
+            var marker_14402f02f24ac153d390e97a9113d339 = L.marker(
+                [59.888717, 30.991698],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_57be91a5d926b6d9b40de06a0cb51b60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bee498b1a1a8704c57bc0cfb4871a57 = $(`<div id="html_4bee498b1a1a8704c57bc0cfb4871a57" style="width: 100.0%; height: 100.0%;">Unit price: 76107.38</div>`)[0];
+                popup_57be91a5d926b6d9b40de06a0cb51b60.setContent(html_4bee498b1a1a8704c57bc0cfb4871a57);
+            
+        
+
+        marker_14402f02f24ac153d390e97a9113d339.bindPopup(popup_57be91a5d926b6d9b40de06a0cb51b60)
+        ;
+
+        
+    
+    
+            var marker_bc19337726539d02d1ef9367c8ae5863 = L.marker(
+                [59.885954, 30.996315],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_7510e7b6179018a0eddc42c69eda91cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_708ba0059b6a8a781d4e732b8abf659c = $(`<div id="html_708ba0059b6a8a781d4e732b8abf659c" style="width: 100.0%; height: 100.0%;">Unit price: 85103.19</div>`)[0];
+                popup_7510e7b6179018a0eddc42c69eda91cf.setContent(html_708ba0059b6a8a781d4e732b8abf659c);
+            
+        
+
+        marker_bc19337726539d02d1ef9367c8ae5863.bindPopup(popup_7510e7b6179018a0eddc42c69eda91cf)
+        ;
+
+        
+    
+    
+            var marker_23be9a7765e6ff099cfb086b0c83dc32 = L.marker(
+                [59.882654, 30.986146],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_69f82800647bdfc7974d6e221b3cfa86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_425891f43f371cdd3e2581d4f615dbe2 = $(`<div id="html_425891f43f371cdd3e2581d4f615dbe2" style="width: 100.0%; height: 100.0%;">Unit price: 87969.31</div>`)[0];
+                popup_69f82800647bdfc7974d6e221b3cfa86.setContent(html_425891f43f371cdd3e2581d4f615dbe2);
+            
+        
+
+        marker_23be9a7765e6ff099cfb086b0c83dc32.bindPopup(popup_69f82800647bdfc7974d6e221b3cfa86)
+        ;
+
+        
+    
+    
+            var marker_a3e72a883e6644000d80ad61ce76a5f4 = L.marker(
+                [59.880302, 30.990108],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_5885d0ed63fee4c97b8fba908bc8ece8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bb589bb352e1e9c34f2c9ba9eaa11e0 = $(`<div id="html_8bb589bb352e1e9c34f2c9ba9eaa11e0" style="width: 100.0%; height: 100.0%;">Unit price: 78009.95</div>`)[0];
+                popup_5885d0ed63fee4c97b8fba908bc8ece8.setContent(html_8bb589bb352e1e9c34f2c9ba9eaa11e0);
+            
+        
+
+        marker_a3e72a883e6644000d80ad61ce76a5f4.bindPopup(popup_5885d0ed63fee4c97b8fba908bc8ece8)
+        ;
+
+        
+    
+    
+            var marker_14db17ece067effb4de6c76a4983167d = L.marker(
+                [59.880302, 30.990108],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d7a567e3b34d7ab1f351593d2d021e54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5be325e9d962baa3dfe125890ddddd47 = $(`<div id="html_5be325e9d962baa3dfe125890ddddd47" style="width: 100.0%; height: 100.0%;">Unit price: 77822.22</div>`)[0];
+                popup_d7a567e3b34d7ab1f351593d2d021e54.setContent(html_5be325e9d962baa3dfe125890ddddd47);
+            
+        
+
+        marker_14db17ece067effb4de6c76a4983167d.bindPopup(popup_d7a567e3b34d7ab1f351593d2d021e54)
+        ;
+
+        
+    
+    
+            var marker_2c51af720e1b9c58f6285d8cb771f1e3 = L.marker(
+                [59.88776, 30.990512],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f61fd42bd3336189a4cfe37276fe9d96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5162411ef9be10ebcd80dd5851197ec3 = $(`<div id="html_5162411ef9be10ebcd80dd5851197ec3" style="width: 100.0%; height: 100.0%;">Unit price: 89543.15</div>`)[0];
+                popup_f61fd42bd3336189a4cfe37276fe9d96.setContent(html_5162411ef9be10ebcd80dd5851197ec3);
+            
+        
+
+        marker_2c51af720e1b9c58f6285d8cb771f1e3.bindPopup(popup_f61fd42bd3336189a4cfe37276fe9d96)
+        ;
+
+        
+    
+    
+            var marker_3c38de433ab6df07c6a33aa5d267fd5c = L.marker(
+                [59.886627, 30.989946],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_9e3dfb54e1ac675ad6546ed5da560797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f56c74ddd9082c13eeee70a25143f86e = $(`<div id="html_f56c74ddd9082c13eeee70a25143f86e" style="width: 100.0%; height: 100.0%;">Unit price: 85063.29</div>`)[0];
+                popup_9e3dfb54e1ac675ad6546ed5da560797.setContent(html_f56c74ddd9082c13eeee70a25143f86e);
+            
+        
+
+        marker_3c38de433ab6df07c6a33aa5d267fd5c.bindPopup(popup_9e3dfb54e1ac675ad6546ed5da560797)
+        ;
+
+        
+    
+    
+            var marker_422d90c23ea2bd167e00318c00f28b8c = L.marker(
+                [59.880302, 30.990108],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f5c1436a5704106d25d1c7b5143ef05f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d986fc5dfa55fad0c43ab1336fa449bb = $(`<div id="html_d986fc5dfa55fad0c43ab1336fa449bb" style="width: 100.0%; height: 100.0%;">Unit price: 87116.88</div>`)[0];
+                popup_f5c1436a5704106d25d1c7b5143ef05f.setContent(html_d986fc5dfa55fad0c43ab1336fa449bb);
+            
+        
+
+        marker_422d90c23ea2bd167e00318c00f28b8c.bindPopup(popup_f5c1436a5704106d25d1c7b5143ef05f)
+        ;
+
+        
+    
+    
+            var marker_0928444b9334d66c50134fba01856093 = L.marker(
+                [59.878518, 31.006223],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_6a94da40b1b563898b8e641f756421cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2269b6ab3a9a37e4fc6406136702e5f = $(`<div id="html_f2269b6ab3a9a37e4fc6406136702e5f" style="width: 100.0%; height: 100.0%;">Unit price: 105000.0</div>`)[0];
+                popup_6a94da40b1b563898b8e641f756421cb.setContent(html_f2269b6ab3a9a37e4fc6406136702e5f);
+            
+        
+
+        marker_0928444b9334d66c50134fba01856093.bindPopup(popup_6a94da40b1b563898b8e641f756421cb)
+        ;
+
+        
+    
+    
+            var marker_6530956fde66351d18daa5a2bd0c31b7 = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_c8303fc1883d1179687a9392d46eef1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fd2e356549dcbc880cc3a161d53f501 = $(`<div id="html_3fd2e356549dcbc880cc3a161d53f501" style="width: 100.0%; height: 100.0%;">Unit price: 104584.79</div>`)[0];
+                popup_c8303fc1883d1179687a9392d46eef1d.setContent(html_3fd2e356549dcbc880cc3a161d53f501);
+            
+        
+
+        marker_6530956fde66351d18daa5a2bd0c31b7.bindPopup(popup_c8303fc1883d1179687a9392d46eef1d)
+        ;
+
+        
+    
+    
+            var marker_f928fcf3a135906de198072214fbf5e8 = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_1f1691ed31ad1ab7a27a69fab13c6b97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1d9cc9ed20dc967867cb691806c84be = $(`<div id="html_d1d9cc9ed20dc967867cb691806c84be" style="width: 100.0%; height: 100.0%;">Unit price: 92864.32</div>`)[0];
+                popup_1f1691ed31ad1ab7a27a69fab13c6b97.setContent(html_d1d9cc9ed20dc967867cb691806c84be);
+            
+        
+
+        marker_f928fcf3a135906de198072214fbf5e8.bindPopup(popup_1f1691ed31ad1ab7a27a69fab13c6b97)
+        ;
+
+        
+    
+    
+            var marker_dc629caaf79c6df0f311411cc62a5bb9 = L.marker(
+                [59.886045, 30.988401],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d1b6efcd1692062ba78563aa07e7eb62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed248edbc7940ed75aeccf9f06e576d1 = $(`<div id="html_ed248edbc7940ed75aeccf9f06e576d1" style="width: 100.0%; height: 100.0%;">Unit price: 146134.02</div>`)[0];
+                popup_d1b6efcd1692062ba78563aa07e7eb62.setContent(html_ed248edbc7940ed75aeccf9f06e576d1);
+            
+        
+
+        marker_dc629caaf79c6df0f311411cc62a5bb9.bindPopup(popup_d1b6efcd1692062ba78563aa07e7eb62)
+        ;
+
+        
+    
+    
+            var marker_f91ef992b1533cf00df20ec3a18cfc75 = L.marker(
+                [59.885598, 30.993539],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_910d04340fb70636c3ed27c5cb348a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01fb56d441f9cad6bdcd8966445d78f3 = $(`<div id="html_01fb56d441f9cad6bdcd8966445d78f3" style="width: 100.0%; height: 100.0%;">Unit price: 87779.87</div>`)[0];
+                popup_910d04340fb70636c3ed27c5cb348a03.setContent(html_01fb56d441f9cad6bdcd8966445d78f3);
+            
+        
+
+        marker_f91ef992b1533cf00df20ec3a18cfc75.bindPopup(popup_910d04340fb70636c3ed27c5cb348a03)
+        ;
+
+        
+    
+    
+            var marker_f4e9410d256d665ef622055657c36804 = L.marker(
+                [59.889327, 30.992569],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d4221aaf23c45cad71c8c73564c3aa47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a49681d0aa2a038cbd13b1dda160a480 = $(`<div id="html_a49681d0aa2a038cbd13b1dda160a480" style="width: 100.0%; height: 100.0%;">Unit price: 84484.85</div>`)[0];
+                popup_d4221aaf23c45cad71c8c73564c3aa47.setContent(html_a49681d0aa2a038cbd13b1dda160a480);
+            
+        
+
+        marker_f4e9410d256d665ef622055657c36804.bindPopup(popup_d4221aaf23c45cad71c8c73564c3aa47)
+        ;
+
+        
+    
+    
+            var marker_f026299327ae424829ed2345e4bd5427 = L.marker(
+                [59.886343, 31.001193],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_91e9ab8de19cf7e3cd03e362e3c6133a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00aa6e63e3bd50717b3fadbe055fcee2 = $(`<div id="html_00aa6e63e3bd50717b3fadbe055fcee2" style="width: 100.0%; height: 100.0%;">Unit price: 102200.0</div>`)[0];
+                popup_91e9ab8de19cf7e3cd03e362e3c6133a.setContent(html_00aa6e63e3bd50717b3fadbe055fcee2);
+            
+        
+
+        marker_f026299327ae424829ed2345e4bd5427.bindPopup(popup_91e9ab8de19cf7e3cd03e362e3c6133a)
+        ;
+
+        
+    
+    
+            var marker_f81e28a479289a2a6dc62ea6b0fce4b3 = L.marker(
+                [59.883088, 30.991033],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_357ebbf2be42eb2d065b8ab50ca51756 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59942e0cef7f0a9d8d28e490e0481884 = $(`<div id="html_59942e0cef7f0a9d8d28e490e0481884" style="width: 100.0%; height: 100.0%;">Unit price: 87325.91</div>`)[0];
+                popup_357ebbf2be42eb2d065b8ab50ca51756.setContent(html_59942e0cef7f0a9d8d28e490e0481884);
+            
+        
+
+        marker_f81e28a479289a2a6dc62ea6b0fce4b3.bindPopup(popup_357ebbf2be42eb2d065b8ab50ca51756)
+        ;
+
+        
+    
+    
+            var marker_40e0443c27ab551bd471bb87da438a0f = L.marker(
+                [59.879936, 30.999962],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_d2b1a82b3198eb40a59f6937b16bad8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78238908d6b74e6b39a9390f5d3641a3 = $(`<div id="html_78238908d6b74e6b39a9390f5d3641a3" style="width: 100.0%; height: 100.0%;">Unit price: 60392.16</div>`)[0];
+                popup_d2b1a82b3198eb40a59f6937b16bad8c.setContent(html_78238908d6b74e6b39a9390f5d3641a3);
+            
+        
+
+        marker_40e0443c27ab551bd471bb87da438a0f.bindPopup(popup_d2b1a82b3198eb40a59f6937b16bad8c)
+        ;
+
+        
+    
+    
+            var marker_b82d6ee1c514308a5d2110b824b6bd85 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_577c39e4f9fbddade9a2e072debcab4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32be1fab3332e66732016a3814e61484 = $(`<div id="html_32be1fab3332e66732016a3814e61484" style="width: 100.0%; height: 100.0%;">Unit price: 107845.93</div>`)[0];
+                popup_577c39e4f9fbddade9a2e072debcab4e.setContent(html_32be1fab3332e66732016a3814e61484);
+            
+        
+
+        marker_b82d6ee1c514308a5d2110b824b6bd85.bindPopup(popup_577c39e4f9fbddade9a2e072debcab4e)
+        ;
+
+        
+    
+    
+            var marker_94b8f6fde00d88945c0e34028d107f97 = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_551c155b22bcfb0bd62fa7cc6973cc53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d32002f630ceb7c56c1f30dd0a0fe34d = $(`<div id="html_d32002f630ceb7c56c1f30dd0a0fe34d" style="width: 100.0%; height: 100.0%;">Unit price: 128544.0</div>`)[0];
+                popup_551c155b22bcfb0bd62fa7cc6973cc53.setContent(html_d32002f630ceb7c56c1f30dd0a0fe34d);
+            
+        
+
+        marker_94b8f6fde00d88945c0e34028d107f97.bindPopup(popup_551c155b22bcfb0bd62fa7cc6973cc53)
+        ;
+
+        
+    
+    
+            var marker_2a2494a8ee78236002e23ec73590233b = L.marker(
+                [59.877452, 31.005101],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_6a105260bb7cc4522a4203f8ea0bce13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a598a43c8dc51ed001f3227d9ef1a809 = $(`<div id="html_a598a43c8dc51ed001f3227d9ef1a809" style="width: 100.0%; height: 100.0%;">Unit price: 102816.0</div>`)[0];
+                popup_6a105260bb7cc4522a4203f8ea0bce13.setContent(html_a598a43c8dc51ed001f3227d9ef1a809);
+            
+        
+
+        marker_2a2494a8ee78236002e23ec73590233b.bindPopup(popup_6a105260bb7cc4522a4203f8ea0bce13)
+        ;
+
+        
+    
+    
+            var marker_2fe39f3e7b689712199a640c3c69828a = L.marker(
+                [59.874363, 30.982858],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a93090b3601594b35393a2fa1cbd5c7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b8a1e3324096a4751356f1fc97314b8 = $(`<div id="html_4b8a1e3324096a4751356f1fc97314b8" style="width: 100.0%; height: 100.0%;">Unit price: 71723.68</div>`)[0];
+                popup_a93090b3601594b35393a2fa1cbd5c7a.setContent(html_4b8a1e3324096a4751356f1fc97314b8);
+            
+        
+
+        marker_2fe39f3e7b689712199a640c3c69828a.bindPopup(popup_a93090b3601594b35393a2fa1cbd5c7a)
+        ;
+
+        
+    
+    
+            var marker_d7260b3c78e12f9cacd8b406e33befff = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_380e67d6c4438a23b97e5947b32485b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae24bf23089814a815666c703efd644b = $(`<div id="html_ae24bf23089814a815666c703efd644b" style="width: 100.0%; height: 100.0%;">Unit price: 106932.52</div>`)[0];
+                popup_380e67d6c4438a23b97e5947b32485b7.setContent(html_ae24bf23089814a815666c703efd644b);
+            
+        
+
+        marker_d7260b3c78e12f9cacd8b406e33befff.bindPopup(popup_380e67d6c4438a23b97e5947b32485b7)
+        ;
+
+        
+    
+    
+            var marker_c0306f502c30c52eb67904504f1ee745 = L.marker(
+                [59.88674, 30.995659],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_2b8e2b26d57375e2f582a607b236e9de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfbd445e61050aebef3c05a224406ced = $(`<div id="html_bfbd445e61050aebef3c05a224406ced" style="width: 100.0%; height: 100.0%;">Unit price: 81744.97</div>`)[0];
+                popup_2b8e2b26d57375e2f582a607b236e9de.setContent(html_bfbd445e61050aebef3c05a224406ced);
+            
+        
+
+        marker_c0306f502c30c52eb67904504f1ee745.bindPopup(popup_2b8e2b26d57375e2f582a607b236e9de)
+        ;
+
+        
+    
+    
+            var marker_c4b48773f53a16d7b1392947a0b885e6 = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_8eae72dfe3933cfd909f4c70f0685fd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6accfa2d1fe6ddcb3b246b821f83c90 = $(`<div id="html_c6accfa2d1fe6ddcb3b246b821f83c90" style="width: 100.0%; height: 100.0%;">Unit price: 103036.21</div>`)[0];
+                popup_8eae72dfe3933cfd909f4c70f0685fd6.setContent(html_c6accfa2d1fe6ddcb3b246b821f83c90);
+            
+        
+
+        marker_c4b48773f53a16d7b1392947a0b885e6.bindPopup(popup_8eae72dfe3933cfd909f4c70f0685fd6)
+        ;
+
+        
+    
+    
+            var marker_cb8ad7db11405e6c0724c9e6562f1172 = L.marker(
+                [59.872006, 30.990692],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_7ce29d7bffbdb223827299fc022e98b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_479c2b3b241e5f501aeb2577d62c0947 = $(`<div id="html_479c2b3b241e5f501aeb2577d62c0947" style="width: 100.0%; height: 100.0%;">Unit price: 85669.72</div>`)[0];
+                popup_7ce29d7bffbdb223827299fc022e98b0.setContent(html_479c2b3b241e5f501aeb2577d62c0947);
+            
+        
+
+        marker_cb8ad7db11405e6c0724c9e6562f1172.bindPopup(popup_7ce29d7bffbdb223827299fc022e98b0)
+        ;
+
+        
+    
+    
+            var marker_786c90c4ea5a5e34bd90144e255cce1a = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_16206ff631e85f826573fb6db2129995 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2af780693274ec7366e0578f88e3d1e = $(`<div id="html_e2af780693274ec7366e0578f88e3d1e" style="width: 100.0%; height: 100.0%;">Unit price: 121185.19</div>`)[0];
+                popup_16206ff631e85f826573fb6db2129995.setContent(html_e2af780693274ec7366e0578f88e3d1e);
+            
+        
+
+        marker_786c90c4ea5a5e34bd90144e255cce1a.bindPopup(popup_16206ff631e85f826573fb6db2129995)
+        ;
+
+        
+    
+    
+            var marker_14240d77c7c1e9d82194cb8b91f0a748 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_c2a21ae209cf34902bad55044aa5c885 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18bea45db29ab1cf2bfe75459b426384 = $(`<div id="html_18bea45db29ab1cf2bfe75459b426384" style="width: 100.0%; height: 100.0%;">Unit price: 113540.79</div>`)[0];
+                popup_c2a21ae209cf34902bad55044aa5c885.setContent(html_18bea45db29ab1cf2bfe75459b426384);
+            
+        
+
+        marker_14240d77c7c1e9d82194cb8b91f0a748.bindPopup(popup_c2a21ae209cf34902bad55044aa5c885)
+        ;
+
+        
+    
+    
+            var marker_3f01332ab2b365d15e4a6bd05d84c910 = L.marker(
+                [59.880618, 30.993422],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_67ee355187d97ff07b359626ca72e0a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_667f6adfdfab682d65a81356b1cf58c3 = $(`<div id="html_667f6adfdfab682d65a81356b1cf58c3" style="width: 100.0%; height: 100.0%;">Unit price: 75123.68</div>`)[0];
+                popup_67ee355187d97ff07b359626ca72e0a1.setContent(html_667f6adfdfab682d65a81356b1cf58c3);
+            
+        
+
+        marker_3f01332ab2b365d15e4a6bd05d84c910.bindPopup(popup_67ee355187d97ff07b359626ca72e0a1)
+        ;
+
+        
+    
+    
+            var marker_b5dbb3c9f2856048cedc9e30840cdd73 = L.marker(
+                [59.885598, 30.993539],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_48f86593eeeddc9678a0c5dc2fd52318 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5656a6f43d8f1cdce76b16d2f6c0e55c = $(`<div id="html_5656a6f43d8f1cdce76b16d2f6c0e55c" style="width: 100.0%; height: 100.0%;">Unit price: 103534.88</div>`)[0];
+                popup_48f86593eeeddc9678a0c5dc2fd52318.setContent(html_5656a6f43d8f1cdce76b16d2f6c0e55c);
+            
+        
+
+        marker_b5dbb3c9f2856048cedc9e30840cdd73.bindPopup(popup_48f86593eeeddc9678a0c5dc2fd52318)
+        ;
+
+        
+    
+    
+            var marker_f6b0ccf05d89fb935afc04267d7b79b6 = L.marker(
+                [59.8743, 30.997177],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_2fa18692c531730dcd1864c940e3099e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc366b3cadbb9c770490ae024c69920b = $(`<div id="html_fc366b3cadbb9c770490ae024c69920b" style="width: 100.0%; height: 100.0%;">Unit price: 97417.94</div>`)[0];
+                popup_2fa18692c531730dcd1864c940e3099e.setContent(html_fc366b3cadbb9c770490ae024c69920b);
+            
+        
+
+        marker_f6b0ccf05d89fb935afc04267d7b79b6.bindPopup(popup_2fa18692c531730dcd1864c940e3099e)
+        ;
+
+        
+    
+    
+            var marker_21d28af255565dfccbc68cb0ccbd8bae = L.marker(
+                [59.873817, 30.985508],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a9722cabca3e5d2a4763dc1ab04f7cac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_543f488060f0e1bb817f1f3668924593 = $(`<div id="html_543f488060f0e1bb817f1f3668924593" style="width: 100.0%; height: 100.0%;">Unit price: 88410.1</div>`)[0];
+                popup_a9722cabca3e5d2a4763dc1ab04f7cac.setContent(html_543f488060f0e1bb817f1f3668924593);
+            
+        
+
+        marker_21d28af255565dfccbc68cb0ccbd8bae.bindPopup(popup_a9722cabca3e5d2a4763dc1ab04f7cac)
+        ;
+
+        
+    
+    
+            var marker_45e8b9d85ea39549d606bcc3480c74d8 = L.marker(
+                [59.876183, 30.991895],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_100efcb6a77a17e0a97144f4c181c2b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a763b389cd277437edb02f34462cf372 = $(`<div id="html_a763b389cd277437edb02f34462cf372" style="width: 100.0%; height: 100.0%;">Unit price: 80606.88</div>`)[0];
+                popup_100efcb6a77a17e0a97144f4c181c2b8.setContent(html_a763b389cd277437edb02f34462cf372);
+            
+        
+
+        marker_45e8b9d85ea39549d606bcc3480c74d8.bindPopup(popup_100efcb6a77a17e0a97144f4c181c2b8)
+        ;
+
+        
+    
+    
+            var marker_3b1786a81eb015dccbd688a725700449 = L.marker(
+                [59.872823, 30.996854],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f4a6efc4986cdbb2b0df137e72f3199e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0bb497f377645af726130588c763623 = $(`<div id="html_c0bb497f377645af726130588c763623" style="width: 100.0%; height: 100.0%;">Unit price: 101876.18</div>`)[0];
+                popup_f4a6efc4986cdbb2b0df137e72f3199e.setContent(html_c0bb497f377645af726130588c763623);
+            
+        
+
+        marker_3b1786a81eb015dccbd688a725700449.bindPopup(popup_f4a6efc4986cdbb2b0df137e72f3199e)
+        ;
+
+        
+    
+    
+            var marker_adac43b831712abc2bfe4acb73813cb0 = L.marker(
+                [59.884975, 30.992156],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f58506e0db13a295053b4e7bc7c65e25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e1fb7d0242205dd2b16fec8776b8b7b = $(`<div id="html_2e1fb7d0242205dd2b16fec8776b8b7b" style="width: 100.0%; height: 100.0%;">Unit price: 122763.59</div>`)[0];
+                popup_f58506e0db13a295053b4e7bc7c65e25.setContent(html_2e1fb7d0242205dd2b16fec8776b8b7b);
+            
+        
+
+        marker_adac43b831712abc2bfe4acb73813cb0.bindPopup(popup_f58506e0db13a295053b4e7bc7c65e25)
+        ;
+
+        
+    
+    
+            var marker_6352be78683dbb001c4cff9d6d27301f = L.marker(
+                [59.878911, 30.998525],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_3bd7bc3581e5e06282e093d9d679b7f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a54260e2f09ccb408a996e28326234a = $(`<div id="html_0a54260e2f09ccb408a996e28326234a" style="width: 100.0%; height: 100.0%;">Unit price: 85584.91</div>`)[0];
+                popup_3bd7bc3581e5e06282e093d9d679b7f5.setContent(html_0a54260e2f09ccb408a996e28326234a);
+            
+        
+
+        marker_6352be78683dbb001c4cff9d6d27301f.bindPopup(popup_3bd7bc3581e5e06282e093d9d679b7f5)
+        ;
+
+        
+    
+    
+            var marker_2906c0c3308f475cf7ef4675358787ed = L.marker(
+                [59.887584, 31.000043],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_17f893991203c680ad0301dce814aba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6a33be76edc86ed6ba18b58a4aef6dd = $(`<div id="html_e6a33be76edc86ed6ba18b58a4aef6dd" style="width: 100.0%; height: 100.0%;">Unit price: 84728.62</div>`)[0];
+                popup_17f893991203c680ad0301dce814aba8.setContent(html_e6a33be76edc86ed6ba18b58a4aef6dd);
+            
+        
+
+        marker_2906c0c3308f475cf7ef4675358787ed.bindPopup(popup_17f893991203c680ad0301dce814aba8)
+        ;
+
+        
+    
+    
+            var marker_f15bc90c087c705e88d2bd9103f2ae7a = L.marker(
+                [59.885002, 30.988527],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_e718cde7366d2e5748dd88b4af3a7091 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d21fb25edc78974f1e98d3d3e03d4443 = $(`<div id="html_d21fb25edc78974f1e98d3d3e03d4443" style="width: 100.0%; height: 100.0%;">Unit price: 95424.0</div>`)[0];
+                popup_e718cde7366d2e5748dd88b4af3a7091.setContent(html_d21fb25edc78974f1e98d3d3e03d4443);
+            
+        
+
+        marker_f15bc90c087c705e88d2bd9103f2ae7a.bindPopup(popup_e718cde7366d2e5748dd88b4af3a7091)
+        ;
+
+        
+    
+    
+            var marker_e7e86293e2d2dd153b7a0f97a25dbe9e = L.marker(
+                [59.878468, 31.004885],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4d7f17e98313502642b4ea533bc20108 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6224462783a98753f9dea4e7c09628e3 = $(`<div id="html_6224462783a98753f9dea4e7c09628e3" style="width: 100.0%; height: 100.0%;">Unit price: 110333.72</div>`)[0];
+                popup_4d7f17e98313502642b4ea533bc20108.setContent(html_6224462783a98753f9dea4e7c09628e3);
+            
+        
+
+        marker_e7e86293e2d2dd153b7a0f97a25dbe9e.bindPopup(popup_4d7f17e98313502642b4ea533bc20108)
+        ;
+
+        
+    
+    
+            var marker_cef98e2e7fe12b98f8d41ce5ef7dbcb5 = L.marker(
+                [59.874097, 30.984179],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_526563b78b366ea412a148a61af889d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ec0915ee502ced75b5f943b89a74ea7 = $(`<div id="html_8ec0915ee502ced75b5f943b89a74ea7" style="width: 100.0%; height: 100.0%;">Unit price: 106442.31</div>`)[0];
+                popup_526563b78b366ea412a148a61af889d0.setContent(html_8ec0915ee502ced75b5f943b89a74ea7);
+            
+        
+
+        marker_cef98e2e7fe12b98f8d41ce5ef7dbcb5.bindPopup(popup_526563b78b366ea412a148a61af889d0)
+        ;
+
+        
+    
+    
+            var marker_0deb903db1e30784f361d03a71974824 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_f764f5914d6e6c79d87f968e3f9af267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cc19e35120df2284ea5411796d0ec2e = $(`<div id="html_2cc19e35120df2284ea5411796d0ec2e" style="width: 100.0%; height: 100.0%;">Unit price: 110923.08</div>`)[0];
+                popup_f764f5914d6e6c79d87f968e3f9af267.setContent(html_2cc19e35120df2284ea5411796d0ec2e);
+            
+        
+
+        marker_0deb903db1e30784f361d03a71974824.bindPopup(popup_f764f5914d6e6c79d87f968e3f9af267)
+        ;
+
+        
+    
+    
+            var marker_da4c90fc47b587db90a257f6d5c31fc3 = L.marker(
+                [59.878518, 31.006223],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_a64b96b955571c7b351d8cd7db9f8aa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b21c8db01b6d02b7a4b302703612da8 = $(`<div id="html_5b21c8db01b6d02b7a4b302703612da8" style="width: 100.0%; height: 100.0%;">Unit price: 106988.76</div>`)[0];
+                popup_a64b96b955571c7b351d8cd7db9f8aa4.setContent(html_5b21c8db01b6d02b7a4b302703612da8);
+            
+        
+
+        marker_da4c90fc47b587db90a257f6d5c31fc3.bindPopup(popup_a64b96b955571c7b351d8cd7db9f8aa4)
+        ;
+
+        
+    
+    
+            var marker_eba6ccdfb2b72ba26bd91d418b1d2dc0 = L.marker(
+                [59.877181, 30.99318],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_4b8fb3bdf9378ffeec5501b6beee7e28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_443d090b990944655ce8de9cba323672 = $(`<div id="html_443d090b990944655ce8de9cba323672" style="width: 100.0%; height: 100.0%;">Unit price: 90094.64</div>`)[0];
+                popup_4b8fb3bdf9378ffeec5501b6beee7e28.setContent(html_443d090b990944655ce8de9cba323672);
+            
+        
+
+        marker_eba6ccdfb2b72ba26bd91d418b1d2dc0.bindPopup(popup_4b8fb3bdf9378ffeec5501b6beee7e28)
+        ;
+
+        
+    
+    
+            var marker_5ef0d0702fa31f8fd0b28436b834e62b = L.marker(
+                [59.880252, 30.985634],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_c5b4b2fff92f3d93ee92ed807ec16d9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbeeacb4040a7f8fadb806e75b918004 = $(`<div id="html_fbeeacb4040a7f8fadb806e75b918004" style="width: 100.0%; height: 100.0%;">Unit price: 143317.54</div>`)[0];
+                popup_c5b4b2fff92f3d93ee92ed807ec16d9b.setContent(html_fbeeacb4040a7f8fadb806e75b918004);
+            
+        
+
+        marker_5ef0d0702fa31f8fd0b28436b834e62b.bindPopup(popup_c5b4b2fff92f3d93ee92ed807ec16d9b)
+        ;
+
+        
+    
+    
+            var marker_129c8523a1ab769916f16217f71b8e30 = L.marker(
+                [59.877931, 30.98284],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_2cf76c9130bdd2630a1e7fb5b4f17d02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a55f06af1780c55e2a3a68a42b6707af = $(`<div id="html_a55f06af1780c55e2a3a68a42b6707af" style="width: 100.0%; height: 100.0%;">Unit price: 126845.6</div>`)[0];
+                popup_2cf76c9130bdd2630a1e7fb5b4f17d02.setContent(html_a55f06af1780c55e2a3a68a42b6707af);
+            
+        
+
+        marker_129c8523a1ab769916f16217f71b8e30.bindPopup(popup_2cf76c9130bdd2630a1e7fb5b4f17d02)
+        ;
+
+        
+    
+    
+            var marker_74743ef3ef839d4a55479cfc32fa0807 = L.marker(
+                [59.885638, 30.990359],
+                {}
+            ).addTo(marker_cluster_8bdec6a1679b4707fca05f6013299332);
+        
+    
+        var popup_6b16169a1459eae8d7d2d95bf6514239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38504889daa47ee0959acf0293e88d4e = $(`<div id="html_38504889daa47ee0959acf0293e88d4e" style="width: 100.0%; height: 100.0%;">Unit price: 105000.0</div>`)[0];
+                popup_6b16169a1459eae8d7d2d95bf6514239.setContent(html_38504889daa47ee0959acf0293e88d4e);
+            
+        
+
+        marker_74743ef3ef839d4a55479cfc32fa0807.bindPopup(popup_6b16169a1459eae8d7d2d95bf6514239)
+        ;
+
+        
+    
+    
+            var heat_map_5a75d707eb2041c08eee4b493d344407 = L.heatLayer(
+                [[59.884975, 30.992156, 112498.77], [59.877452, 31.005101, 122298.99], [59.885638, 30.990359, 83966.34], [59.885638, 30.990359, 86625.0], [59.886343, 31.001193, 86758.62], [59.877931, 30.98284, 140679.61], [59.886045, 30.988401, 105217.04], [59.880252, 30.985634, 113053.51], [59.877019, 30.999854, 74540.54], [59.888717, 30.991698, 69018.04], [59.877931, 30.98284, 113806.45], [59.877931, 30.98284, 133707.87], [59.883647, 30.986622, 72437.81], [59.873817, 30.985508, 88842.42], [59.877452, 31.005101, 110634.15], [59.879696, 30.994527, 87111.11], [59.886045, 30.988401, 102139.95], [59.887584, 31.000043, 88042.75], [59.873677, 30.997375, 100172.41], [59.877452, 31.005101, 107429.66], [59.877931, 30.98284, 95083.33], [59.877931, 30.98284, 103738.47], [59.884975, 30.992156, 121536.49], [59.877931, 30.98284, 143195.5], [59.874363, 30.982858, 84000.0], [59.877452, 31.005101, 123690.0], [59.886045, 30.988401, 113578.65], [59.887557, 30.997644, 91021.67], [59.877452, 30.997267, 92296.3], [59.885638, 30.990359, 105317.71], [59.885638, 30.990359, 106006.92], [59.885598, 30.993539, 99104.35], [59.878468, 31.004885, 116103.32], [59.872521, 30.995659, 87425.43], [59.877931, 30.98284, 136888.89], [59.874097, 30.984179, 62167.87], [59.877931, 30.98284, 115347.43], [59.886343, 31.001193, 97027.78], [59.889164, 30.994285, 81553.4], [59.873568, 30.986946, 68466.72], [59.883647, 30.986622, 70461.92], [59.866517, 30.98514, 57551.64], [59.882568, 30.995902, 79284.21], [59.886343, 31.001193, 86660.0], [59.888049, 30.99892, 79692.25], [59.888717, 30.991698, 89600.0], [59.885598, 30.993539, 81331.32], [59.883647, 30.986622, 93975.9], [59.872968, 30.991437, 85882.35], [59.873677, 30.997375, 107800.0], [59.882934, 30.994617, 95276.71], [59.877931, 30.98284, 111784.62], [59.880252, 30.985634, 112116.38], [59.877452, 31.005101, 106422.31], [59.882022, 30.991626, 106804.12], [59.871915, 30.996189, 83168.32], [59.873153, 30.9953, 74986.84], [59.880252, 30.985634, 116255.89], [59.885638, 30.990359, 110250.0], [59.873776, 30.996513, 79655.17], [59.877931, 30.98284, 111349.69], [59.883489, 30.992461, 96092.54], [59.884975, 30.992156, 100280.9], [59.87355, 30.983074, 93103.45], [59.873004, 30.989587, 70445.92], [59.880252, 30.985634, 99215.43], [59.877931, 30.98284, 105977.84], [59.886045, 30.988401, 117306.12], [59.880717, 30.988724, 80640.0], [59.887015, 30.998911, 83612.9], [59.8743, 30.997177, 89673.2], [59.874883, 30.993611, 86024.1], [59.873871, 30.995659, 97264.14], [59.886343, 31.001193, 72845.9], [59.886045, 30.988401, 98933.33], [59.888717, 30.991698, 76107.38], [59.885954, 30.996315, 85103.19], [59.882654, 30.986146, 87969.31], [59.880302, 30.990108, 78009.95], [59.880302, 30.990108, 77822.22], [59.88776, 30.990512, 89543.15], [59.886627, 30.989946, 85063.29], [59.880302, 30.990108, 87116.88], [59.878518, 31.006223, 105000.0], [59.877452, 31.005101, 104584.79], [59.885638, 30.990359, 92864.32], [59.886045, 30.988401, 146134.02], [59.885598, 30.993539, 87779.87], [59.889327, 30.992569, 84484.85], [59.886343, 31.001193, 102200.0], [59.883088, 30.991033, 87325.91], [59.879936, 30.999962, 60392.16], [59.877931, 30.98284, 107845.93], [59.880252, 30.985634, 128544.0], [59.877452, 31.005101, 102816.0], [59.874363, 30.982858, 71723.68], [59.877931, 30.98284, 106932.52], [59.88674, 30.995659, 81744.97], [59.880252, 30.985634, 103036.21], [59.872006, 30.990692, 85669.72], [59.877931, 30.98284, 121185.19], [59.877931, 30.98284, 113540.79], [59.880618, 30.993422, 75123.68], [59.885598, 30.993539, 103534.88], [59.8743, 30.997177, 97417.94], [59.873817, 30.985508, 88410.1], [59.876183, 30.991895, 80606.88], [59.872823, 30.996854, 101876.18], [59.884975, 30.992156, 122763.59], [59.878911, 30.998525, 85584.91], [59.887584, 31.000043, 84728.62], [59.885002, 30.988527, 95424.0], [59.878468, 31.004885, 110333.72], [59.874097, 30.984179, 106442.31], [59.877931, 30.98284, 110923.08], [59.878518, 31.006223, 106988.76], [59.877181, 30.99318, 90094.64], [59.880252, 30.985634, 143317.54], [59.877931, 30.98284, 126845.6], [59.885638, 30.990359, 105000.0]],
+                {"blur": 15, "gradient": {"0.2": "blue", "0.4": "green", "0.6": "yellow", "0.8": "orange", "1": "red"}, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_7194575d7ef7f511f09525b11a4ca49f);
+        
+    
+    var color_map_a58d3f7f08246ea82d52d6f72fc9dbae = {};
+
+    
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.color = d3.scale.threshold()
+              .domain([57551.64, 57729.1597995992, 57906.679599198396, 58084.199398797595, 58261.71919839679, 58439.23899799599, 58616.75879759519, 58794.27859719439, 58971.79839679359, 59149.318196392785, 59326.837995991984, 59504.35779559118, 59681.87759519038, 59859.39739478958, 60036.91719438878, 60214.436993987976, 60391.956793587175, 60569.47659318637, 60746.99639278557, 60924.51619238477, 61102.03599198397, 61279.55579158317, 61457.075591182365, 61634.595390781564, 61812.11519038076, 61989.63498997996, 62167.15478957916, 62344.67458917836, 62522.194388777556, 62699.714188376754, 62877.23398797595, 63054.75378757515, 63232.27358717435, 63409.79338677355, 63587.31318637275, 63764.832985971945, 63942.35278557114, 64119.87258517034, 64297.39238476954, 64474.91218436874, 64652.43198396794, 64829.951783567136, 65007.471583166334, 65184.991382765525, 65362.51118236473, 65540.03098196392, 65717.55078156313, 65895.07058116232, 66072.59038076153, 66250.11018036072, 66427.62997995992, 66605.14977955911, 66782.66957915832, 66960.18937875751, 67137.70917835672, 67315.2289779559, 67492.74877755511, 67670.2685771543, 67847.78837675351, 68025.3081763527, 68202.8279759519, 68380.3477755511, 68557.8675751503, 68735.3873747495, 68912.9071743487, 69090.42697394789, 69267.9467735471, 69445.46657314629, 69622.9863727455, 69800.50617234469, 69978.02597194389, 70155.54577154308, 70333.06557114229, 70510.58537074148, 70688.10517034068, 70865.62496993988, 71043.14476953908, 71220.66456913827, 71398.18436873748, 71575.70416833667, 71753.22396793588, 71930.74376753507, 72108.26356713427, 72285.78336673346, 72463.30316633265, 72640.82296593186, 72818.34276553107, 72995.86256513026, 73173.38236472946, 73350.90216432865, 73528.42196392786, 73705.94176352705, 73883.46156312624, 74060.98136272545, 74238.50116232465, 74416.02096192384, 74593.54076152304, 74771.06056112224, 74948.58036072145, 75126.10016032064, 75303.61995991983, 75481.13975951904, 75658.65955911824, 75836.17935871743, 76013.69915831662, 76191.21895791583, 76368.73875751504, 76546.25855711423, 76723.77835671342, 76901.29815631262, 77078.81795591183, 77256.33775551102, 77433.85755511021, 77611.37735470942, 77788.89715430861, 77966.41695390781, 78143.936753507, 78321.45655310621, 78498.9763527054, 78676.49615230461, 78854.0159519038, 79031.535751503, 79209.05555110221, 79386.5753507014, 79564.09515030059, 79741.6149498998, 79919.134749499, 80096.6545490982, 80274.17434869739, 80451.69414829659, 80629.21394789578, 80806.73374749499, 80984.25354709418, 81161.77334669339, 81339.29314629258, 81516.81294589178, 81694.33274549097, 81871.85254509018, 82049.37234468939, 82226.89214428858, 82404.41194388777, 82581.93174348697, 82759.45154308616, 82936.97134268537, 83114.49114228456, 83292.01094188377, 83469.53074148296, 83647.05054108216, 83824.57034068136, 84002.09014028056, 84179.60993987975, 84357.12973947896, 84534.64953907815, 84712.16933867735, 84889.68913827655, 85067.20893787575, 85244.72873747494, 85422.24853707415, 85599.76833667334, 85777.28813627255, 85954.80793587174, 86132.32773547093, 86309.84753507013, 86487.36733466934, 86664.88713426853, 86842.40693386774, 87019.92673346693, 87197.44653306613, 87374.96633266532, 87552.48613226453, 87730.00593186372, 87907.52573146293, 88085.04553106212, 88262.56533066132, 88440.08513026052, 88617.60492985972, 88795.12472945891, 88972.6445290581, 89150.16432865731, 89327.68412825651, 89505.2039278557, 89682.7237274549, 89860.2435270541, 90037.76332665331, 90215.2831262525, 90392.80292585169, 90570.3227254509, 90747.8425250501, 90925.3623246493, 91102.88212424848, 91280.40192384769, 91457.9217234469, 91635.44152304609, 91812.9613226453, 91990.48112224448, 92168.00092184369, 92345.52072144288, 92523.04052104207, 92700.56032064128, 92878.08012024048, 93055.59991983967, 93233.11971943887, 93410.63951903807, 93588.15931863728, 93765.67911823647, 93943.19891783566, 94120.71871743487, 94298.23851703407, 94475.75831663326, 94653.27811623245, 94830.79791583166, 95008.31771543087, 95185.83751503006, 95363.35731462925, 95540.87711422844, 95718.39691382766, 95895.91671342685, 96073.43651302604, 96250.95631262523, 96428.47611222445, 96605.99591182364, 96783.51571142284, 96961.03551102204, 97138.55531062125, 97316.07511022044, 97493.59490981963, 97671.11470941883, 97848.63450901804, 98026.15430861723, 98203.67410821642, 98381.19390781563, 98558.71370741483, 98736.23350701403, 98913.75330661322, 99091.27310621242, 99268.79290581161, 99446.31270541082, 99623.83250501001, 99801.35230460922, 99978.8721042084, 100156.39190380761, 100333.9117034068, 100511.431503006, 100688.9513026052, 100866.4711022044, 101043.9909018036, 101221.51070140279, 101399.03050100201, 101576.5503006012, 101754.07010020039, 101931.58989979958, 102109.1096993988, 102286.629498998, 102464.14929859719, 102641.66909819638, 102819.1888977956, 102996.70869739479, 103174.22849699398, 103351.74829659318, 103529.26809619239, 103706.78789579158, 103884.30769539077, 104061.82749498998, 104239.34729458917, 104416.86709418838, 104594.38689378757, 104771.90669338677, 104949.42649298596, 105126.94629258517, 105304.46609218436, 105481.98589178355, 105659.50569138276, 105837.02549098196, 106014.54529058115, 106192.06509018035, 106369.58488977955, 106547.10468937876, 106724.62448897795, 106902.14428857714, 107079.66408817635, 107257.18388777555, 107434.70368737474, 107612.22348697393, 107789.74328657314, 107967.26308617234, 108144.78288577154, 108322.30268537073, 108499.82248496995, 108677.34228456914, 108854.86208416833, 109032.38188376752, 109209.90168336673, 109387.42148296593, 109564.94128256512, 109742.46108216433, 109919.98088176352, 110097.50068136273, 110275.02048096192, 110452.54028056111, 110630.06008016031, 110807.57987975952, 110985.09967935871, 111162.6194789579, 111340.13927855711, 111517.65907815631, 111695.1788777555, 111872.6986773547, 112050.2184769539, 112227.7382765531, 112405.2580761523, 112582.77787575149, 112760.2976753507, 112937.8174749499, 113115.33727454909, 113292.85707414828, 113470.37687374747, 113647.8966733467, 113825.41647294589, 114002.93627254508, 114180.45607214427, 114357.97587174349, 114535.49567134268, 114713.01547094187, 114890.53527054108, 115068.05507014028, 115245.57486973947, 115423.09466933866, 115600.61446893787, 115778.13426853708, 115955.65406813627, 116133.17386773546, 116310.69366733466, 116488.21346693387, 116665.73326653306, 116843.25306613225, 117020.77286573146, 117198.29266533065, 117375.81246492986, 117553.33226452905, 117730.85206412825, 117908.37186372744, 118085.89166332665, 118263.41146292584, 118440.93126252503, 118618.45106212424, 118795.97086172344, 118973.49066132263, 119151.01046092183, 119328.53026052105, 119506.05006012024, 119683.56985971943, 119861.08965931862, 120038.60945891784, 120216.12925851703, 120393.64905811622, 120571.16885771541, 120748.68865731463, 120926.20845691382, 121103.72825651302, 121281.24805611222, 121458.76785571143, 121636.28765531062, 121813.80745490981, 121991.32725450901, 122168.8470541082, 122346.36685370741, 122523.8866533066, 122701.40645290581, 122878.926252505, 123056.4460521042, 123233.9658517034, 123411.4856513026, 123589.0054509018, 123766.52525050098, 123944.04505010019, 124121.5648496994, 124299.08464929859, 124476.6044488978, 124654.12424849698, 124831.64404809619, 125009.16384769538, 125186.68364729457, 125364.20344689378, 125541.72324649298, 125719.24304609218, 125896.76284569138, 126074.28264529059, 126251.80244488976, 126429.32224448897, 126606.84204408816, 126784.36184368737, 126961.88164328657, 127139.40144288576, 127316.92124248497, 127494.44104208416, 127671.96084168335, 127849.48064128256, 128027.00044088176, 128204.52024048095, 128382.04004008016, 128559.55983967935, 128737.07963927854, 128914.59943887775, 129092.11923847694, 129269.63903807614, 129447.15883767535, 129624.67863727454, 129802.19843687375, 129979.71823647294, 130157.23803607213, 130334.75783567133, 130512.27763527053, 130689.79743486973, 130867.31723446894, 131044.83703406813, 131222.35683366732, 131399.8766332665, 131577.3964328657, 131754.91623246492, 131932.43603206414, 132109.95583166333, 132287.47563126252, 132464.99543086172, 132642.5152304609, 132820.0350300601, 132997.5548296593, 133175.0746292585, 133352.59442885773, 133530.1142284569, 133707.6340280561, 133885.1538276553, 134062.6736272545, 134240.1934268537, 134417.7132264529, 134595.2330260521, 134772.75282565132, 134950.27262525048, 135127.7924248497, 135305.3122244489, 135482.83202404808, 135660.35182364727, 135837.8716232465, 136015.39142284566, 136192.91122244488, 136370.4310220441, 136547.9508216433, 136725.47062124248, 136902.99042084167, 137080.51022044086, 137258.03002004005, 137435.54981963924, 137613.06961923846, 137790.58941883768, 137968.10921843688, 138145.62901803607, 138323.14881763526, 138500.66861723445, 138678.18841683364, 138855.70821643286, 139033.22801603205, 139210.74781563127, 139388.26761523046, 139565.78741482965, 139743.30721442885, 139920.82701402804, 140098.34681362723, 140275.86661322645, 140453.38641282564, 140630.90621242486, 140808.42601202405, 140985.94581162324, 141163.46561122243, 141340.98541082162, 141518.50521042082, 141696.02501002004, 141873.54480961923, 142051.06460921845, 142228.58440881764, 142406.10420841683, 142583.62400801602, 142761.1438076152, 142938.6636072144, 143116.18340681362, 143293.7032064128, 143471.223006012, 143648.74280561123, 143826.26260521042, 144003.7824048096, 144181.3022044088, 144358.822004008, 144536.3418036072, 144713.8616032064, 144891.3814028056, 145068.9012024048, 145246.421002004, 145423.9408016032, 145601.4606012024, 145778.98040080158, 145956.50020040077, 146134.02])
+              .range(['#0000ffff', '#0001fdff', '#0002fbff', '#0003f9ff', '#0004f7ff', '#0005f5ff', '#0006f3ff', '#0007f1ff', '#0008efff', '#0009edff', '#000aebff', '#000be9ff', '#000ce7ff', '#000de5ff', '#000ee3ff', '#000fe1ff', '#0010dfff', '#0011ddff', '#0012dbff', '#0013d9ff', '#0014d6ff', '#0015d4ff', '#0016d2ff', '#0017d0ff', '#0018ceff', '#0019ccff', '#001acaff', '#001bc8ff', '#001cc6ff', '#001dc4ff', '#001ec2ff', '#001fc0ff', '#0020beff', '#0021bcff', '#0023baff', '#0024b8ff', '#0025b6ff', '#0026b4ff', '#0027b2ff', '#0028afff', '#0029adff', '#002aabff', '#002ba9ff', '#002ca7ff', '#002da5ff', '#002ea3ff', '#002fa1ff', '#00309fff', '#00319dff', '#00329bff', '#003399ff', '#003497ff', '#003595ff', '#003693ff', '#003791ff', '#00388fff', '#00398dff', '#003a8bff', '#003b88ff', '#003c86ff', '#003d84ff', '#003e82ff', '#003f80ff', '#00407eff', '#00417cff', '#00427aff', '#004378ff', '#004576ff', '#004674ff', '#004772ff', '#004870ff', '#00496eff', '#004a6cff', '#004b6aff', '#004c68ff', '#004d66ff', '#004e64ff', '#004f61ff', '#00505fff', '#00515dff', '#00525bff', '#005359ff', '#005457ff', '#005555ff', '#005653ff', '#005751ff', '#00584fff', '#00594dff', '#005a4bff', '#005b49ff', '#005c47ff', '#005d45ff', '#005e43ff', '#005f41ff', '#00603fff', '#00613dff', '#00623aff', '#006338ff', '#006436ff', '#006534ff', '#006732ff', '#006830ff', '#00692eff', '#006a2cff', '#006b2aff', '#006c28ff', '#006d26ff', '#006e24ff', '#006f22ff', '#007020ff', '#00711eff', '#00721cff', '#00731aff', '#007418ff', '#007516ff', '#007614ff', '#007711ff', '#00780fff', '#00790dff', '#007a0bff', '#007b09ff', '#007c07ff', '#007d05ff', '#007e03ff', '#007f01ff', '#008000ff', '#028100ff', '#048200ff', '#068300ff', '#088400ff', '#0a8500ff', '#0c8600ff', '#0e8700ff', '#108800ff', '#128900ff', '#158a00ff', '#178b00ff', '#198d00ff', '#1b8e00ff', '#1d8f00ff', '#1f9000ff', '#219100ff', '#239200ff', '#259300ff', '#279400ff', '#299500ff', '#2b9600ff', '#2d9700ff', '#2f9800ff', '#319900ff', '#339a00ff', '#359b00ff', '#379c00ff', '#399d00ff', '#3c9e00ff', '#3e9f00ff', '#40a000ff', '#42a100ff', '#44a200ff', '#46a300ff', '#48a400ff', '#4aa500ff', '#4ca600ff', '#4ea700ff', '#50a800ff', '#52a900ff', '#54aa00ff', '#56ab00ff', '#58ac00ff', '#5aad00ff', '#5cae00ff', '#5eaf00ff', '#60b000ff', '#63b100ff', '#65b200ff', '#67b300ff', '#69b400ff', '#6bb500ff', '#6db600ff', '#6fb700ff', '#71b800ff', '#73b900ff', '#75bb00ff', '#77bc00ff', '#79bd00ff', '#7bbe00ff', '#7dbf00ff', '#7fc000ff', '#81c100ff', '#83c200ff', '#85c300ff', '#87c400ff', '#8ac500ff', '#8cc600ff', '#8ec700ff', '#90c800ff', '#92c900ff', '#94ca00ff', '#96cb00ff', '#98cc00ff', '#9acd00ff', '#9cce00ff', '#9ecf00ff', '#a0d000ff', '#a2d100ff', '#a4d200ff', '#a6d300ff', '#a8d400ff', '#aad500ff', '#acd600ff', '#aed700ff', '#b0d800ff', '#b3d900ff', '#b5da00ff', '#b7db00ff', '#b9dc00ff', '#bbdd00ff', '#bdde00ff', '#bfdf00ff', '#c1e000ff', '#c3e100ff', '#c5e200ff', '#c7e300ff', '#c9e400ff', '#cbe500ff', '#cde600ff', '#cfe700ff', '#d1e900ff', '#d3ea00ff', '#d5eb00ff', '#d7ec00ff', '#daed00ff', '#dcee00ff', '#deef00ff', '#e0f000ff', '#e2f100ff', '#e4f200ff', '#e6f300ff', '#e8f400ff', '#eaf500ff', '#ecf600ff', '#eef700ff', '#f0f800ff', '#f2f900ff', '#f4fa00ff', '#f6fb00ff', '#f8fc00ff', '#fafd00ff', '#fcfe00ff', '#feff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff200ff', '#fff100ff', '#fff100ff', '#fff000ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe500ff', '#ffe400ff', '#ffe400ff', '#ffe300ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc000ff', '#ffbf00ff', '#ffbf00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb300ff', '#ffb200ff', '#ffb200ff', '#ffb100ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x = d3.scale.linear()
+              .domain([57551.64, 146134.02])
+              .range([0, 450 - 50]);
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.legend = L.control({position: 'topright'});
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.legend.addTo(map_7194575d7ef7f511f09525b11a4ca49f);
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.xAxis = d3.svg.axis()
+        .scale(color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([57551.64, 79697.235, 101842.82999999999, 123988.42499999999, 146134.02]);
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.g = color_map_a58d3f7f08246ea82d52d6f72fc9dbae.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.g.selectAll("rect")
+        .data(color_map_a58d3f7f08246ea82d52d6f72fc9dbae.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x(color_map_a58d3f7f08246ea82d52d6f72fc9dbae.color.domain()[i - 1]) : color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x.range()[0],
+            x1: i < color_map_a58d3f7f08246ea82d52d6f72fc9dbae.color.domain().length ? color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x(color_map_a58d3f7f08246ea82d52d6f72fc9dbae.color.domain()[i]) : color_map_a58d3f7f08246ea82d52d6f72fc9dbae.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_a58d3f7f08246ea82d52d6f72fc9dbae.g.call(color_map_a58d3f7f08246ea82d52d6f72fc9dbae.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Unit price");
+</script>
+</html>
