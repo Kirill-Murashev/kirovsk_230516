@@ -8,7 +8,7 @@ kir = pd.read_csv(file_path, sep=';')
 print(kir)
 
 # Unit price
-# Create specific sub dataframe
+# Create a specific sub dataframe
 df = kir[['latitude', 'longitude', 'unit_price']]
 print(df)
 
@@ -39,7 +39,7 @@ m.add_child(colormap)
 m.save('heatmap_unit_price.html')
 
 # Discount
-# Create specific sub dataframe
+# Create a specific sub dataframe
 df = kir[['latitude', 'longitude', 'total_discount']]
 df['total_discount'] = 1 - df['total_discount']
 print(df)
@@ -71,7 +71,7 @@ m.add_child(colormap)
 m.save('heatmap_total_discount.html')
 
 # Age
-# Create specific sub dataframe
+# Create a specific sub dataframe
 df = kir[['latitude', 'longitude', 'age']]
 print(df)
 
@@ -102,7 +102,7 @@ m.add_child(colormap)
 m.save('heatmap_age.html')
 
 # Floors
-# Create specific sub dataframe
+# Create a specific sub dataframe
 df = kir[['latitude', 'longitude', 'floors']]
 print(df)
 
