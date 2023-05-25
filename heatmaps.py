@@ -7,6 +7,8 @@ file_path = 'kirovsk_230516.csv'
 kir = pd.read_csv(file_path, sep=';')
 print(kir)
 
+kir = None
+
 # Unit price
 # Create a specific sub dataframe
 df = kir[['latitude', 'longitude', 'unit_price']]
