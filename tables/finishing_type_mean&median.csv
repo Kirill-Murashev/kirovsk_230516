@@ -1,0 +1,5 @@
+Variable,Mean,Median
+is_without_renovation,84492.33954545454,83789.62
+is_basic_renovation,97584.69213333332,97417.94
+is_improved_renovation,107234.79125000001,106214.83
+is_design_renovation,110967.62428571428,112116.38

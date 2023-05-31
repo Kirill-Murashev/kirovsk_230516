@@ -1,0 +1,5 @@
+,Shapiro-Wilk Statistic,Shapiro-Wilk P-value,Shapiro-Wilk Decision,Lilliefors Statistic,Lilliefors P-value,Lilliefors Decision,Anderson-Darling Statistic,Anderson-Darling Critical Value (5%),Anderson-Darling Decision,Jarque-Bera Statistic,Jarque-Bera P-value,Jarque-Bera Decision,K-squared D'Agostino Statistic,K-squared D'Agostino P-value,K-squared D'Agostino Decision
+finishing,0.78585,0.00000,H0 rejected,0.34414,0.00100,H0 rejected,12.21882,0.76300,H0 rejected,15.46180,0.00044,H0 rejected,14.04303,0.00089,H0 rejected
+log_finishing,0.78589,0.00000,H0 rejected,0.35160,0.00100,H0 rejected,13.09177,0.76300,H0 rejected,2.90572,0.23390,H0 cannot be rejected,3.12107,0.21002,H0 cannot be rejected
+sqrt_finishing,0.79954,0.00000,H0 rejected,0.31572,0.00100,H0 rejected,12.10559,0.76300,H0 rejected,0.85973,0.65060,H0 cannot be rejected,1.29410,0.52359,H0 cannot be rejected
+bcx_finishing,0.79827,0.00000,H0 rejected,0.32641,0.00100,H0 rejected,12.28529,0.76300,H0 rejected,0.06969,0.96575,H0 cannot be rejected,0.32173,0.85141,H0 cannot be rejected
