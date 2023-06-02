@@ -1,0 +1,6 @@
+,Test,Dependent variable,Independent variable,Statistic,p-value
+0,Kruskal-Wallis,unit_price,rooms,38.8619014754548,2.531780638117743e-07
+1,Kruskal-Wallis,unit_price,walls_type,34.04028642520615,1.9427671179097239e-07
+2,Kruskal-Wallis,unit_price,finishing_type,22.045445177005224,6.382614767843892e-05
+3,Kruskal-Wallis,unit_price,is_elevators,38.7698831496941,3.8126491485495675e-09
+4,Kruskal-Wallis,unit_price,epoch,72.23411446667983,2.0632950723415694e-16

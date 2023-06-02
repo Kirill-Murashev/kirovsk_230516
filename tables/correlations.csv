@@ -1,0 +1,7 @@
+independent_var,pearson_coef,pearson_p,pearson_significant,spearman_coef,spearman_p,spearman_significant,kendall_coef,kendall_p,kendall_significant
+square_total,-0.36636,0.00004,yes,-0.44170,0.00000,yes,-0.32199,0.00000,yes
+square_living,-0.42652,0.00000,yes,-0.47822,0.00000,yes,-0.35850,0.00000,yes
+square_kitchen,0.07470,0.41746,no,0.01013,0.91255,no,0.01273,0.83815,no
+ratio_liv_tot,-0.34325,0.00012,yes,-0.35811,0.00006,yes,-0.24960,0.00006,yes
+ratio_kit_tot,0.32155,0.00034,yes,0.28107,0.00187,yes,0.19808,0.00139,yes
+age,-0.67778,0.00000,yes,-0.67034,0.00000,yes,-0.46276,0.00000,yes

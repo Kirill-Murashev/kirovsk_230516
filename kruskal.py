@@ -33,6 +33,18 @@ choices_2 = [1, 2, 3, 4]
 market['finishing_type'] = np.select(conditions_2, choices_2, default=np.nan)
 
 
+def apply_conditions(value):
+    if value > 75:
+        return 1
+    elif 25 < value <= 75:
+        return 2
+    else:
+        return 3
+
+
+market['epoch'] = market['age'].apply(apply_conditions)
+
+
 def run_kruskal(df, dv, ivs):
     """
     Perform Kruskal-Wallis H test.
@@ -62,6 +74,6 @@ def run_kruskal(df, dv, ivs):
     return results
 
 
-kruskal_walls = run_kruskal(market, 'unit_price', ['rooms', 'walls_type', 'finishing_type', 'is_elevators'])
-print(kruskal_walls)
-kruskal_walls.to_csv('/home/kaarlahti/PycharmProjects/kirovsk_230516/tables/kruskal_walls&finishing&elevators.csv')
+kruskal_all = run_kruskal(market, 'unit_price', ['rooms', 'walls_type', 'finishing_type', 'is_elevators', 'epoch'])
+print(kruskal_all)
+kruskal_all.to_csv('/home/kaarlahti/PycharmProjects/kirovsk_230516/tables/kruskal_walls&finishing&elevators&epoch.csv')
