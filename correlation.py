@@ -15,32 +15,33 @@ file_path = 'kirovsk_230516.csv'
 market = pd.read_csv(file_path)
 
 
-# # Create function for correlation calculating
-# def calculate_correlations(df, dependent_var, independent_vars, alpha = 0.05):
-#     result = []
-#     for independent_var in independent_vars:
-#         pearson_coef, pearson_p = stats.pearsonr(df[dependent_var], df[independent_var])
-#         spearman_coef, spearman_p = stats.spearmanr(df[dependent_var], df[independent_var])
-#         kendall_coef, kendall_p = stats.kendalltau(df[dependent_var], df[independent_var])
-#
-#         result.append({
-#             'independent_var': independent_var,
-#             'pearson_coef': pearson_coef,
-#             'pearson_p': pearson_p,
-#             'pearson_significant': 'yes' if pearson_p < alpha else 'no',
-#             'spearman_coef': spearman_coef,
-#             'spearman_p': spearman_p,
-#             'spearman_significant': 'yes' if spearman_p < alpha else 'no',
-#             'kendall_coef': kendall_coef,
-#             'kendall_p': kendall_p,
-#             'kendall_significant': 'yes' if kendall_p < alpha else 'no'
-#         })
-#
-#     result_df = pd.DataFrame(result)
-#     result_df.set_index('independent_var', inplace=True)
-#
-#     return result_df
-#
+# Create function for correlation calculating
+def calculate_correlations(df, dependent_var, independent_vars, alpha = 0.05):
+    result = []
+    for independent_var in independent_vars:
+        pearson_coef, pearson_p = stats.pearsonr(df[dependent_var], df[independent_var])
+        spearman_coef, spearman_p = stats.spearmanr(df[dependent_var], df[independent_var])
+        kendall_coef, kendall_p = stats.kendalltau(df[dependent_var], df[independent_var])
+
+        result.append({
+            'independent_var': independent_var,
+            'pearson_coef': pearson_coef,
+            'pearson_p': pearson_p,
+            'pearson_significant': 'yes' if pearson_p < alpha else 'no',
+            'spearman_coef': spearman_coef,
+            'spearman_p': spearman_p,
+            'spearman_significant': 'yes' if spearman_p < alpha else 'no',
+            'kendall_coef': kendall_coef,
+            'kendall_p': kendall_p,
+            'kendall_significant': 'yes' if kendall_p < alpha else 'no'
+        })
+
+    result_df = pd.DataFrame(result)
+    result_df.set_index('independent_var', inplace=True)
+
+    return result_df
+
+
 # # Apply function to data
 # market_cor = calculate_correlations(market, 'unit_price', ['square_total', 'square_living', 'square_kitchen',
 #                                                            'ratio_liv_tot', 'ratio_kit_tot', 'age'])
@@ -72,40 +73,40 @@ market = pd.read_csv(file_path)
 # Save plot to file
 
 
-# def plot_correlations(df, dependent_var, independent_vars, correlation_type='pearson', plots_per_row=3, path='.'):
-#     if correlation_type == 'pearson':
-#         correlation_func = stats.pearsonr
-#     elif correlation_type == 'spearman':
-#         correlation_func = stats.spearmanr
-#     elif correlation_type == 'kendall':
-#         correlation_func = stats.kendalltau
-#     else:
-#         raise ValueError("Invalid correlation_type. Choose 'pearson', 'spearman', or 'kendall'.")
-#
-#     num_plots = len(independent_vars)
-#     num_rows = math.ceil(num_plots / plots_per_row)
-#
-#     fig, axs = plt.subplots(num_rows, plots_per_row, figsize=(15, num_rows * 5))
-#     axs = axs.flatten()
-#
-#     for ax, independent_var in zip(axs, independent_vars):
-#         sns.scatterplot(data=df, x=independent_var, y=dependent_var, ax=ax)
-#
-#         coef, p = correlation_func(df[dependent_var], df[independent_var])
-#         ax.set_title(f'{correlation_type.capitalize()} Correlation: {coef:.2f}, p-value: {p:.2f}')
-#
-#     # remove empty subplots
-#     for i in range(num_plots, len(axs)):
-#         fig.delaxes(axs[i])
-#
-#     plt.tight_layout()
-#
-#     # save the plot to a .png file
-#     plt.savefig(os.path.join(path, f'{correlation_type}_{dependent_var}_correlation.png'))
-#
-#     plt.show()
-#
-#
+def plot_correlations(df, dependent_var, independent_vars, correlation_type='pearson', plots_per_row=3, path='.'):
+    if correlation_type == 'pearson':
+        correlation_func = stats.pearsonr
+    elif correlation_type == 'spearman':
+        correlation_func = stats.spearmanr
+    elif correlation_type == 'kendall':
+        correlation_func = stats.kendalltau
+    else:
+        raise ValueError("Invalid correlation_type. Choose 'pearson', 'spearman', or 'kendall'.")
+
+    num_plots = len(independent_vars)
+    num_rows = math.ceil(num_plots / plots_per_row)
+
+    fig, axs = plt.subplots(num_rows, plots_per_row, figsize=(15, num_rows * 5))
+    axs = axs.flatten()
+
+    for ax, independent_var in zip(axs, independent_vars):
+        sns.scatterplot(data=df, x=independent_var, y=dependent_var, ax=ax)
+
+        coef, p = correlation_func(df[dependent_var], df[independent_var])
+        ax.set_title(f'{correlation_type.capitalize()} Correlation: {coef:.2f}, p-value: {p:.2f}')
+
+    # remove empty subplots
+    for i in range(num_plots, len(axs)):
+        fig.delaxes(axs[i])
+
+    plt.tight_layout()
+
+    # save the plot to a .png file
+    plt.savefig(os.path.join(path, f'{correlation_type}_{dependent_var}_correlation.png'))
+
+    plt.show()
+
+
 # plot_correlations(market, 'unit_price', ['square_total', 'square_living',
 #                                          'square_kitchen', 'ratio_liv_tot', 'ratio_kit_tot', 'age'],
 #                   'kendall', 2, '/home/kaarlahti/PycharmProjects/kirovsk_230516/img/')
@@ -169,6 +170,6 @@ def plot_correlation_matrix(df, correlation_type, vars, path):
     plt.show()
 
 
-plot_correlation_matrix(market, 'kendall', ['unit_price', 'square_total', 'square_living',
-                                            'square_kitchen', 'ratio_liv_tot', 'ratio_kit_tot', 'age'],
-                        '/home/kaarlahti/PycharmProjects/kirovsk_230516/img/')
+# plot_correlation_matrix(market, 'kendall', ['unit_price', 'square_total', 'square_living',
+#                                             'square_kitchen', 'ratio_liv_tot', 'ratio_kit_tot', 'age'],
+#                         '/home/kaarlahti/PycharmProjects/kirovsk_230516/img/')
