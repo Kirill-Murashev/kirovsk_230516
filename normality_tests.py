@@ -1,33 +1,6 @@
 import pandas as pd
-import numpy as np
 import scipy.stats as stats
-from statsmodels.stats.diagnostic import lilliefors, normal_ad
-
-# Set pandas display options
-pd.set_option('display.float_format', lambda x: '%.5f' % x)
-
-# Read data
-file_path = 'kirovsk_230516.csv'
-market = pd.read_csv(file_path)
-market = market[['exposition_days', 'total_discount', 'price', 'unit_price', 'square_total',
-                 'square_living', 'square_kitchen', 'ratio_liv_tot', 'ratio_kit_tot',
-                 'floor', 'floors', 'age', 'finishing']]
-market['finishing'] = market['finishing'] + 1
-
-###############
-# Create variables
-value_1 = 'finishing'
-
-# Calculate the desirable values
-dss = pd.DataFrame()
-dss[f'{value_1}'] = market[f'{value_1}']
-dss[f'log_{value_1}'] = np.log(market[f'{value_1}'])
-dss[f'sqrt_{value_1}'] = np.sqrt(market[f'{value_1}'])
-bcx_target, lam = stats.boxcox(market[f'{value_1}'])
-dss[f'bcx_{value_1}'] = bcx_target
-
-# Check the intermediate result
-print(dss)
+from statsmodels.stats.diagnostic import lilliefors
 
 
 def normality_tests(df):
@@ -58,8 +31,3 @@ def normality_tests(df):
     result_df.index = df.columns  # Use column names as index
     result_df = result_df.applymap(lambda x: f'{x:.5f}' if isinstance(x, float) else x)
     return result_df
-
-
-test_result = normality_tests(dss)
-print(test_result)
-test_result.to_csv(f'normality_test_{value_1}.csv')
